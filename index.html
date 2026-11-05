@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SPS Code Orbit - Learn. Code. Explore.</title>
+  <meta name="theme-color" content="#070B1F">
+  <meta name="description" content="Gamified interactive coding platform for young learners in programming, artificial intelligence, robotics, and creative technology.">
+  <meta property="og:title" content="SPS Code Orbit - Learn. Code. Explore.">
+  <meta property="og:description" content="Gamified interactive coding platform for young learners in programming, artificial intelligence, robotics, and creative technology.">
+  <script>(function(){var h=document.documentElement,n=navigator,c=n.connection||{},l=false;try{l=matchMedia('(prefers-reduced-motion: reduce)').matches||c.saveData||/lite=1/.test(location.search)||sessionStorage.getItem('co-lite')==='1'||(n.deviceMemory&&n.deviceMemory<=2)||(n.hardwareConcurrency&&n.hardwareConcurrency<=2)}catch(e){}h.className+=' js '+(l?'lite':'anim')})();</script>
+  <link rel="preload" as="image" href="assets/images/orbit/astronaut-pointing.webp" fetchpriority="high">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sora:wght@600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap">
+  <style>:root{--bg-dark-void: #070A14; --bg-deep-space: #0D1127; --bg-space-gradient: linear-gradient(180deg, #070A14 0%, #0D1127 100%); --bg-cosmic-purple: #140F2E; --bg-card-glass: rgba(16, 23, 42, 0.65); --bg-card-glass-hover: rgba(22, 32, 60, 0.82); --bg-header-glass: rgba(7, 10, 20, 0.85); --bg-pill-glass: rgba(16, 23, 42, 0.75); --color-cyan: #70D6FF; --color-cyan-glow: rgba(112, 214, 255, 0.35); --color-purple: #C084FC; --color-magenta: #7C6CF0; --color-purple-glow: rgba(192, 132, 252, 0.35); --color-yellow: #FFE699; --color-yellow-glow: rgba(255, 230, 153, 0.4); --color-pink: #8499FF; --color-pink-glow: rgba(132, 153, 255, 0.35); --color-mint: #6EE7B7; --color-mint-glow: rgba(110, 231, 183, 0.35); --text-primary: #FFFFFF; --text-secondary: #E2E8F0; --text-muted: #94A3B8; --text-subtle: #64748B; --text-highlight: #70D6FF; --border-glass: 1px solid rgba(112, 214, 255, 0.35); --border-glass-subtle: 1px solid rgba(255, 255, 255, 0.1); --border-glass-bright: 1px solid rgba(112, 214, 255, 0.65); --border-glass-purple: 1px solid rgba(192, 132, 252, 0.45); --border-radius-card: 22px; --border-radius-bubble-card: 24px; --border-radius-console: 24px; --border-radius-pill: 50px; --backdrop-blur: blur(16px); --transition-smooth: all 0.35s cubic-bezier(0.16, 1, 0.3, 1); --transition-bounce: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1); --shadow-interactive-glow: 0 0 20px rgba(112, 214, 255, 0.25); --shadow-interactive-hover: 0 0 24px rgba(112, 214, 255, 0.45); --shadow-purple-glow: 0 0 20px rgba(192, 132, 252, 0.25); --shadow-card: 0 14px 35px -10px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(255, 255, 255, 0.1); --shadow-card-hover: 0 20px 45px -10px rgba(0, 0, 0, 0.75), 0 0 25px rgba(112, 214, 255, 0.25); --halo-cyan: 0 18px 45px -10px rgba(0, 0, 0, 0.75), 0 0 35px rgba(112, 214, 255, 0.35), inset 0 2px 5px rgba(255, 255, 255, 0.2), inset 0 -6px 16px rgba(0, 0, 0, 0.4); --halo-purple: 0 18px 45px -10px rgba(0, 0, 0, 0.75), 0 0 35px rgba(192, 132, 252, 0.35), inset 0 2px 5px rgba(255, 255, 255, 0.2), inset 0 -6px 16px rgba(0, 0, 0, 0.4); --halo-pink: 0 18px 45px -10px rgba(0, 0, 0, 0.75), 0 0 35px rgba(132, 153, 255, 0.35), inset 0 2px 5px rgba(255, 255, 255, 0.2), inset 0 -6px 16px rgba(0, 0, 0, 0.4); --halo-yellow: 0 18px 45px -10px rgba(0, 0, 0, 0.75), 0 0 35px rgba(255, 230, 153, 0.35), inset 0 2px 5px rgba(255, 255, 255, 0.2), inset 0 -6px 16px rgba(0, 0, 0, 0.4); --max-width: 1240px; --header-height: 80px;} *,*::before,*::after{box-sizing: border-box; margin: 0; padding: 0;} html{font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; background-color: var(--bg-dark-void); color: var(--text-primary); scroll-behavior: smooth; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;} body{min-height: 100vh; background-color: var(--bg-dark-void); color: var(--text-primary); overflow-x: hidden; position: relative; line-height: 1.6;} img{max-width: 100%; display: block;} a{color: inherit; text-decoration: none;} button{font: inherit; border: none; background: none; cursor: pointer;} .container{width: 100%; max-width: var(--max-width); margin: 0 auto; padding: 0 1.5rem; position: relative; z-index: 10;} @keyframes twinkleStars{ 0% { opacity: 0.45; transform: scale(1); } 50% { opacity: 0.9; transform: scale(1.008); } 100% { opacity: 0.65; transform: scale(1); } } @keyframes swirlDrift1{ 0% { transform: translate(0px, 0px) scale(1) rotate(0deg); } 50% { transform: translate(60px, 40px) scale(1.15) rotate(12deg); } 100% { transform: translate(-30px, 70px) scale(0.95) rotate(-8deg); } } @keyframes swirlDrift2{ 0% { transform: translate(0px, 0px) scale(1) rotate(0deg); } 50% { transform: translate(-70px, -50px) scale(1.12) rotate(-15deg); } 100% { transform: translate(40px, 30px) scale(1.05) rotate(10deg); } } @keyframes swirlDrift3{ 0% { transform: translate(0px, 0px) scale(1.05); } 50% { transform: translate(50px, -60px) scale(1.2); } 100% { transform: translate(-40px, 30px) scale(0.95); } } @keyframes orbitDashMove{ to { stroke-dashoffset: -1000; } } @keyframes beaconPulse{ 0%, 100% { r: 4.5; opacity: 0.7; filter: drop-shadow(0 0 6px rgba(56, 189, 248, 0.8)); } 50% { r: 7.5; opacity: 1; filter: drop-shadow(0 0 14px rgba(124, 108, 240, 1)); } } @keyframes float{ 0% { transform: translateY(0px) rotate(0deg); } 50% { transform: translateY(-12px) rotate(1.5deg); } 100% { transform: translateY(0px) rotate(0deg); } } @keyframes zeroGravityFloat1{ 0% { transform: translateY(0px) rotate(0deg); } 50% { transform: translateY(-12px) rotate(2deg); } 100% { transform: translateY(0px) rotate(0deg); } } @keyframes zeroGravityFloat2{ 0% { transform: translateY(0px) rotate(0deg); } 50% { transform: translateY(-15px) rotate(-2.5deg); } 100% { transform: translateY(0px) rotate(0deg); } } @keyframes zeroGravityFloat3{ 0% { transform: translateY(0px) rotate(0deg); } 50% { transform: translateY(-10px) rotate(1.8deg); } 100% { transform: translateY(0px) rotate(0deg); } } @keyframes zeroGravityFloat4{ 0% { transform: translateY(0px) rotate(0deg); } 50% { transform: translateY(-14px) rotate(-1.5deg); } 100% { transform: translateY(0px) rotate(0deg); } } .btn-pill,.btn{display: inline-flex; align-items: center; justify-content: center; gap: 0.65rem; padding: 0.8rem 1.8rem; border-radius: var(--border-radius-pill); font-weight: 750; font-size: 0.95rem; letter-spacing: 0.015em; white-space: nowrap; transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.25s ease, background 0.25s ease, border-color 0.25s ease; cursor: pointer; position: relative; z-index: 1; text-decoration: none;} .btn-primary-cyan{background: linear-gradient(135deg, #4DB8E8 0%, #6B8CFF 50%, #7C6CF0 100%); color: #070A14; font-weight: 800; border: 1px solid rgba(255, 255, 255, 0.4); box-shadow: 0 4px 18px rgba(94, 200, 242, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.35); text-shadow: none;} .btn-primary-cyan:hover{transform: translateY(-2px); box-shadow: 0 0 25px rgba(112, 214, 255, 0.45), 0 0 30px rgba(192, 132, 252, 0.35); border-color: rgba(255, 255, 255, 0.85); background: linear-gradient(135deg, #99E2FF 0%, #D8B4FE 100%); color: #070A14;} .btn-glass{background: rgba(16, 23, 42, 0.65); color: #FFFFFF; border: 1px solid rgba(112, 214, 255, 0.35); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); box-shadow: 0 0 15px rgba(112, 214, 255, 0.15);} .btn-glass:hover{transform: translateY(-2px); background: rgba(22, 32, 60, 0.85); border-color: #70D6FF; box-shadow: 0 0 20px rgba(112, 214, 255, 0.3), 0 0 25px rgba(192, 132, 252, 0.2); color: #FFFFFF;} .btn-white-pill{background: rgba(112, 214, 255, 0.12); color: #E0F7FF; font-weight: 750; border: 1px solid rgba(112, 214, 255, 0.45); box-shadow: 0 0 16px rgba(112, 214, 255, 0.15);} .btn-white-pill:hover{background: #F0F9FF; color: #0284C7; box-shadow: 0 6px 28px rgba(112, 214, 255, 0.55); transform: translateY(-2px);} .glass-header{position: fixed; top: 0; left: 0; width: 100%; height: var(--header-height); z-index: 1000; background: var(--bg-header-glass); backdrop-filter: blur(20px) saturate(160%); -webkit-backdrop-filter: blur(20px) saturate(160%); border-bottom: 1px solid rgba(56, 189, 248, 0.2); box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4); transition: var(--transition-smooth);} .nav-container{display: flex; align-items: center; justify-content: space-between; height: 100%;} .brand-logo{display: flex; align-items: center; gap: 0.75rem; font-size: 1.35rem; font-weight: 850; letter-spacing: -0.02em; color: #ffffff;} .brand-orbit-icon{width: 38px; height: 38px; display: flex; align-items: center; justify-content: center; color: var(--color-cyan); filter: drop-shadow(0 0 12px rgba(56, 189, 248, 0.8)) drop-shadow(0 0 20px rgba(124, 108, 240, 0.5)); transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);} .brand-logo:hover .brand-orbit-icon{transform: rotate(60deg) scale(1.15);} .nav-links{display: flex; align-items: center; gap: 2.2rem;} .nav-link{color: #cbd5e1; font-size: 0.95rem; font-weight: 650; transition: var(--transition-smooth); position: relative; padding: 0.35rem 0;} .nav-link::after{content: ""; position: absolute; bottom: 0; left: 50%; width: 0; height: 2px; background: linear-gradient(90deg, #38bdf8, #c084fc); box-shadow: 0 0 10px rgba(56, 189, 248, 0.8); transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1); transform: translateX(-50%); border-radius: 2px;} .nav-link:hover{color: #ffffff; text-shadow: 0 0 14px rgba(56, 189, 248, 0.8);} .nav-link:hover::after{width: 100%;} .nav-auth{display: flex; align-items: center; gap: 1.4rem;} .login-link{color: #e2e8f0; font-weight: 750; font-size: 0.95rem; transition: var(--transition-smooth);} .login-link:hover{color: var(--color-cyan); text-shadow: 0 0 12px rgba(56, 189, 248, 0.6);} @keyframes orbitLineDash{ to { stroke-dashoffset: -100; } } @keyframes beamPulse{ 0% { opacity: 0.4; transform: rotate(15deg) scaleX(0.9); } 100% { opacity: 0.95; transform: rotate(15deg) scaleX(1.05); } } .modal-backdrop{position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(4, 6, 15, 0.88); backdrop-filter: blur(20px); z-index: 2000; display: none; align-items: center; justify-content: center; padding: 1.5rem;} .modal-backdrop.active{display: flex;} .modal-dialog{background: #090d22; border: 1.5px solid rgba(56, 189, 248, 0.55); border-radius: 24px; width: 100%; max-width: 950px; max-height: 90vh; overflow: hidden; box-shadow: 0 25px 60px -12px rgba(0, 0, 0, 0.9), 0 0 50px rgba(56, 189, 248, 0.45); display: flex; flex-direction: column;} .modal-header{padding: 1.1rem 1.8rem; background: #050714; border-bottom: 1px solid rgba(255, 255, 255, 0.1); display: flex; align-items: center; justify-content: space-between;} .modal-title-wrap{display: flex; align-items: center; gap: 0.8rem; font-weight: 800; font-size: 1.1rem; color: #ffffff;} .btn-close-modal{width: 36px; height: 36px; border-radius: 50%; background: rgba(255, 255, 255, 0.08); color: #94a3b8; display: flex; align-items: center; justify-content: center; transition: 0.2s;} .btn-close-modal:hover{background: rgba(239, 68, 68, 0.25); color: #ef4444;} .modal-body{padding: 1.8rem; display: grid; grid-template-columns: 1fr 1fr; gap: 1.8rem; flex-grow: 1; overflow-y: auto;} .code-textarea{width: 100%; height: 320px; background: #03050c; color: #38bdf8; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 0.92rem; border: 1px solid rgba(56, 189, 248, 0.3); border-radius: 12px; padding: 1.1rem; resize: none; outline: none;} .preview-iframe{width: 100%; height: 320px; background: #050714; border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 12px;} .space-footer{position: relative; background: #03050d; border-top: 1px solid rgba(56, 189, 248, 0.2); padding: 5.5rem 0 2.8rem; margin-top: 5rem; z-index: 10;} .footer-top-grid{display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr; gap: 3rem; margin-bottom: 4rem;} .footer-brand-col .brand-logo{margin-bottom: 0.85rem;} .footer-tagline{color: #94a3b8; font-size: 0.95rem; margin-bottom: 1.6rem;} .social-icons-row{display: flex; gap: 0.95rem;} .social-btn{width: 44px; height: 44px; border-radius: 50%; background: rgba(14, 20, 44, 0.85); border: 1px solid rgba(56, 189, 248, 0.3); color: var(--color-cyan); display: flex; align-items: center; justify-content: center; transition: var(--transition-bounce);} .social-btn:hover{background: var(--color-cyan); color: #03050d; transform: translateY(-4px) scale(1.08); box-shadow: 0 0 24px rgba(56, 189, 248, 0.7);} .footer-col-title{font-size: 1.1rem; font-weight: 800; color: #ffffff; margin-bottom: 1.35rem; letter-spacing: -0.01em;} .footer-links-list{list-style: none; display: flex; flex-direction: column; gap: 0.85rem;} .footer-links-list a{color: #94a3b8; font-size: 0.94rem; transition: color 0.2s;} .footer-links-list a:hover{color: var(--color-cyan); text-shadow: 0 0 10px rgba(56, 189, 248, 0.5);} .footer-planet-box{position: relative; background: rgba(14, 20, 44, 0.75); border: 1px solid rgba(192, 132, 252, 0.35); border-radius: 20px; padding: 1.35rem; display: flex; align-items: center; gap: 1.1rem; box-shadow: 0 0 25px rgba(192, 132, 252, 0.2); transition: transform 0.3s ease, box-shadow 0.3s ease; cursor: pointer;} .footer-planet-box:hover{transform: translateY(-3px) scale(1.02); box-shadow: 0 0 35px rgba(192, 132, 252, 0.4);} .easter-egg-bubble{position: absolute; top: -46px; left: 20px; background: rgba(10, 15, 36, 0.95); border: 1px solid rgba(56, 189, 248, 0.6); border-radius: 12px; padding: 0.35rem 0.8rem; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 0.78rem; color: #7dd3fc; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6), 0 0 16px rgba(56, 189, 248, 0.35); opacity: 0; transform: translateY(6px); pointer-events: none; transition: opacity 0.25s ease, transform 0.25s ease; white-space: nowrap; z-index: 10;} .easter-egg-bubble::after{content: ""; position: absolute; bottom: -6px; left: 20px; width: 0; height: 0; border-left: 6px solid transparent; border-right: 6px solid transparent; border-top: 6px solid rgba(56, 189, 248, 0.6);} .footer-planet-box:hover .easter-egg-bubble{opacity: 1; transform: translateY(0);} .footer-planet-icon{width: 52px; height: 52px; object-fit: contain; flex-shrink: 0; transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);} .footer-planet-box:hover .footer-planet-icon{transform: rotate(12deg) scale(1.15);} .footer-planet-text{font-size: 0.9rem; font-weight: 750; color: #e0f2fe; line-height: 1.45;} .footer-institutional-branding{margin-top: 1.15rem; display: flex; flex-direction: column; gap: 0.7rem;} .footer-institution-row{display: flex; align-items: center; gap: 0.8rem; padding: 0.7rem 0.9rem; border-radius: 14px; background: linear-gradient(135deg, rgba(30, 58, 138, 0.32) 0%, rgba(15, 23, 42, 0.6) 100%); border: 1px solid rgba(112, 214, 255, 0.25); transition: border-color 0.25s ease, box-shadow 0.25s ease;} .footer-institution-row:hover{border-color: rgba(112, 214, 255, 0.45); box-shadow: 0 0 18px rgba(56, 189, 248, 0.15);} .footer-institution-logo{width: 48px; height: 48px; object-fit: contain; flex-shrink: 0; border-radius: 10px; background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.14); padding: 4px;} .footer-institution-text{display: flex; flex-direction: column; gap: 0.15rem; min-width: 0;} .footer-institution-kicker{font-size: 0.65rem; font-weight: 800; color: #70D6FF; letter-spacing: 0.06em; text-transform: uppercase;} .footer-institution-name{font-size: 0.9rem; font-weight: 800; color: #FFFFFF; line-height: 1.25;} @media (max-width: 768px){.footer-institution-logo{width: 40px; height: 40px;}.footer-institution-name{font-size: 0.82rem;}.footer-institution-row{padding: 0.6rem 0.75rem;}} .footer-bottom-bar{padding-top: 2.2rem; border-top: 1px solid rgba(255, 255, 255, 0.08); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; color: #64748b; font-size: 0.88rem;} .footer-bottom-sub{display: inline-flex; align-items: center; gap: 0.4rem;} @media (max-width: 1024px){.footer-top-grid{grid-template-columns: 1fr 1fr; gap: 2.5rem;}} @media (max-width: 768px){:root{--header-height: 72px;}.footer-top-grid{grid-template-columns: 1fr; gap: 2rem;}.modal-body{grid-template-columns: 1fr;}} @media (prefers-reduced-motion: reduce){*{animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important;}}.brand-orbit-icon{flex-shrink: 0 !important;} html{-webkit-text-size-adjust: 100%; text-size-adjust: 100%; box-sizing: border-box;} *,*::before,*::after{box-sizing: inherit;} html,body{max-width: 100%; width: 100%; position: relative; margin: 0; padding: 0; overflow-x: clip;} img{max-width: 100%; height: auto;} .btn,.btn-pill,button.btn,a.btn{display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; border-radius: 999px; font-weight: 750; letter-spacing: 0.01em; cursor: pointer; transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, border-color 0.2s ease; text-decoration: none; touch-action: manipulation;} .btn-primary-cyan,button[type="submit"].btn-pill,a.btn-primary-cyan{background: linear-gradient(135deg, #4DB8E8 0%, #6B8CFF 50%, #7C6CF0 100%) !important; color: #070A14 !important; border: 1px solid rgba(255, 255, 255, 0.35) !important; box-shadow: 0 4px 16px rgba(77, 184, 232, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.3) !important; text-shadow: none !important;} .btn-primary-cyan:hover,a.btn-primary-cyan:hover{transform: translateY(-2px); background: linear-gradient(135deg, #6BC9F0 0%, #8499FF 50%, #9585F5 100%) !important; box-shadow: 0 8px 24px rgba(77, 184, 232, 0.35), 0 0 18px rgba(124, 108, 240, 0.22) !important; color: #070A14 !important;} .btn-glass{background: rgba(16, 23, 42, 0.75) !important; color: #E2E8F0 !important; border: 1px solid rgba(112, 214, 255, 0.4) !important; box-shadow: 0 0 14px rgba(112, 214, 255, 0.1) !important; backdrop-filter: blur(14px);} .btn-glass:hover{border-color: rgba(124, 108, 240, 0.55) !important; color: #fff !important; box-shadow: 0 0 18px rgba(112, 214, 255, 0.2) !important; background: rgba(22, 32, 60, 0.9) !important; transform: translateY(-2px);} .btn-white-pill,a.btn-white-pill{background: rgba(112, 214, 255, 0.12) !important; color: #DDF6FF !important; border: 1px solid rgba(112, 214, 255, 0.45) !important; box-shadow: 0 0 14px rgba(112, 214, 255, 0.12) !important; font-weight: 750 !important;} .btn-white-pill:hover,a.btn-white-pill:hover{background: linear-gradient(135deg, #4DB8E8 0%, #7C6CF0 100%) !important; color: #070A14 !important; box-shadow: 0 0 20px rgba(112, 214, 255, 0.35) !important;} .mobile-nav-btn{display: none; align-items: center; justify-content: center; width: 44px; height: 44px; min-width: 44px; min-height: 44px; border-radius: 12px; border: 1px solid rgba(112, 214, 255, 0.35); background: rgba(112, 214, 255, 0.1); color: #70D6FF; cursor: pointer; flex-shrink: 0; position: relative; z-index: 1120; padding: 0; touch-action: manipulation; pointer-events: auto;} .mobile-nav-btn:hover,.mobile-nav-btn:focus-visible{background: rgba(112, 214, 255, 0.22); outline: 2px solid #70D6FF; outline-offset: 2px;} .mobile-nav-backdrop{display: none; position: fixed; inset: 0; background: rgba(4, 6, 15, 0.82) !important; z-index: 1040; opacity: 0; transition: opacity 0.25s ease; backdrop-filter: none !important; -webkit-backdrop-filter: none !important; pointer-events: none;} .mobile-nav-backdrop.is-open{display: block; opacity: 1; pointer-events: auto;} .mobile-drawer-actions{margin-top: 1.25rem; padding-top: 1.25rem; border-top: 1px solid rgba(255, 255, 255, 0.1); display: flex; flex-direction: column; gap: 0.75rem; pointer-events: auto; position: relative; z-index: 1112;} .mobile-drawer-actions .drawer-link,.mobile-drawer-actions .btn-pill{width: 100%; min-height: 46px; display: flex; align-items: center; justify-content: center; font-size: 0.95rem; cursor: pointer; pointer-events: auto;} @media (min-width: 901px){.mobile-drawer-actions,.mobile-nav-backdrop,.mobile-nav-btn,#mobile-nav-btn{display: none !important; visibility: hidden !important; pointer-events: none !important;}.mobile-nav-backdrop.is-open{display: none !important; opacity: 0 !important; pointer-events: none !important;}.glass-header{position: fixed; top: 0; left: 0; width: 100%; height: var(--header-height, 80px); min-height: var(--header-height, 80px); z-index: 1000; background: var(--bg-header-glass, rgba(7, 9, 19, 0.82)); backdrop-filter: blur(20px) saturate(160%); -webkit-backdrop-filter: blur(20px) saturate(160%); border-bottom: 1px solid rgba(56, 189, 248, 0.2); box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);}.nav-container{display: flex; align-items: center; justify-content: space-between; height: 100%; min-height: var(--header-height, 80px); position: relative;}.brand-logo{display: flex; align-items: center; gap: 0.75rem; font-size: 1.35rem; font-weight: 850; letter-spacing: -0.02em; color: #ffffff; text-decoration: none; min-width: 0;}.brand-logo span{white-space: nowrap; overflow: visible; text-overflow: clip; font-size: 1.35rem; font-weight: 850; color: #ffffff;}.brand-orbit-icon{flex-shrink: 0; width: 38px; height: 38px; color: var(--color-cyan, #38bdf8);}.nav-links{display: flex !important; flex-direction: row !important; position: static !important; top: auto !important; right: auto !important; width: auto !important; height: auto !important; margin: 0 !important; padding: 0 !important; gap: 2.2rem !important; background: transparent !important; border: none !important; box-shadow: none !important; transform: none !important; overflow: visible !important; align-items: center !important; pointer-events: auto !important; z-index: auto !important;}.nav-link{color: #cbd5e1; font-size: 0.95rem; font-weight: 650; padding: 0.35rem 0;}.nav-auth{display: flex; align-items: center; gap: 1.4rem; flex-shrink: 0;}} @media (max-width: 900px){.glass-header{position: fixed; top: 0; left: 0; width: 100%; height: auto; min-height: var(--header-height, 72px); z-index: 1050;}.nav-container{display: flex; align-items: center; justify-content: space-between; min-height: var(--header-height, 72px); position: relative;}.brand-logo{display: flex; align-items: center; gap: 0.75rem; text-decoration: none; min-width: 0; z-index: 1055;}.brand-logo span{white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: clamp(0.95rem, 2.4vw, 1.2rem) !important; font-weight: 800 !important; color: #fff !important;}.brand-orbit-icon{flex-shrink: 0 !important; width: 34px !important; height: 34px !important; color: #70D6FF !important;}.nav-auth{display: flex; align-items: center; gap: 0.55rem; flex-shrink: 0;}} @media (max-width: 900px){.mobile-nav-btn{display: flex !important;}.nav-links{display: flex !important; flex-direction: column; position: fixed; top: 0; right: 0; width: min(320px, 86vw); height: 100vh; height: 100dvh; margin: 0; padding: calc(var(--header-height, 72px) + 1.25rem) 1.25rem 2rem; gap: 0.4rem; background: #0B1020 !important; background: linear-gradient(180deg, #0B1020 0%, #10162B 100%) !important; border-left: 1px solid rgba(112, 214, 255, 0.25); box-shadow: -16px 0 45px rgba(0, 0, 0, 0.85); z-index: 1110; transform: translateX(105%); transition: transform 0.28s cubic-bezier(0.22, 1, 0.36, 1); overflow-y: auto; -webkit-overflow-scrolling: touch; align-items: stretch; pointer-events: auto;}.nav-links.is-open{transform: translateX(0); pointer-events: auto;}.nav-links > .nav-link{display: flex; align-items: center; padding: 0.9rem 1rem; border-radius: 12px; color: #F1F5F9 !important; font-weight: 700; font-size: 1.05rem; border: 1px solid transparent; text-decoration: none; cursor: pointer; pointer-events: auto; position: relative; z-index: 1112; transition: background 0.15s ease, color 0.15s ease;}.nav-links > .nav-link:hover,.nav-links > .nav-link:focus-visible{background: rgba(112, 214, 255, 0.12); border-color: rgba(112, 214, 255, 0.3); color: #70D6FF !important;}.brand-logo span{max-width: 44vw;}} @media (max-width: 768px){.container{padding-left: 1.25rem; padding-right: 1.25rem;}.nav-auth{display: none !important;}.brand-logo span{max-width: 58vw;}.footer-top-grid{display: grid !important; grid-template-columns: 1fr !important; gap: 2.5rem;}} @media (max-width: 880px){header[style*="justify-content: space-between"] nav .btn{flex-shrink: 0 !important; white-space: nowrap !important;}} @media (max-width: 992px){.nav-links,.glass-header,.mobile-nav-backdrop{backdrop-filter: none !important; -webkit-backdrop-filter: none !important;}} @media (max-width: 640px){.modal-backdrop{padding: 0.5rem !important;}.modal-dialog{width: 100% !important; max-width: 100% !important; max-height: 94vh !important; max-height: 94dvh !important; margin: 0 !important; border-radius: 16px !important;}.modal-body{padding: 1rem !important;}} @media (max-width: 374px){body{font-size: 14px;}.container{padding-left: 0.75rem !important; padding-right: 0.75rem !important;}.btn,.btn-pill{padding: 0.55rem 1rem !important; font-size: 0.82rem !important;}.brand-logo span{font-size: 0.95rem !important; max-width: 140px !important; overflow: hidden !important; text-overflow: ellipsis !important;}} @media (hover: none) and (pointer: coarse){.btn,.btn-pill,.mobile-nav-btn,button{min-height: 44px;}} @media (max-width: 900px){.mobile-nav-backdrop,.mobile-nav-backdrop.is-open{z-index: 1090 !important;}.nav-links,.nav-links.is-open{z-index: 1200 !important; background: #0B1020 !important; pointer-events: auto !important;}.mobile-nav-btn{z-index: 1210 !important;}} pre{max-width: 100%;} pre{overflow-x: auto; -webkit-overflow-scrolling: touch;}</style>
+  <script src="https://unpkg.com/lucide@latest" defer></script>
+  <link rel="stylesheet" href="/code-orbit/css/ux-polish.css?v=1.0">
+  <style>
+@property --c1{syntax:'<color>';inherits:true;initial-value:rgba(139,108,255,.3)}
+@property --c2{syntax:'<color>';inherits:true;initial-value:rgba(34,196,255,.16)}
+:root{--bg:#070B1F;--bg2:#0D1433;--vi:#8B6CFF;--cy:#22C4FF;--tx:#F4F1FF;--mut:rgba(244,241,255,.76);--ln:rgba(139,108,255,.3);--bd:rgba(139,108,255,.28);--mono:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+html{background:var(--bg)}
+body.co{font-family:'Plus Jakarta Sans',-apple-system,'Segoe UI',Roboto,sans-serif;background:transparent;color:var(--tx)}
+.co h1,.co h2,.co h3{font-family:'Sora','Plus Jakarta Sans',-apple-system,'Segoe UI',sans-serif}
+.co img{max-width:100%;height:auto;display:block}
+.co a:focus-visible,.co button:focus-visible{outline:2px solid var(--cy);outline-offset:3px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media (min-width:901px){.mobile-drawer-actions,.mobile-nav-btn{display:none}}
+.brand-logo .logo-img{height:52px;width:auto;max-width:none}
+.footer-brand-col .logo-foot{height:68px}
+@media (max-width:640px){.brand-logo .logo-img{height:42px}}
+.space-footer{margin-top:0}
+::selection{background:rgba(139,108,255,.45);color:#fff}
+html{scrollbar-width:thin;scrollbar-color:#8B6CFF rgba(7,11,31,.9)}
+::-webkit-scrollbar{width:10px;height:10px}
+::-webkit-scrollbar-track{background:#070B1F}
+::-webkit-scrollbar-thumb{background:linear-gradient(#22C4FF,#8B6CFF);border-radius:8px;border:2px solid #070B1F}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes blink{50%{opacity:0}}
+
+/* ---------- deep space layers (fixed, behind everything) ---------- */
+.cosmos{position:fixed;inset:0;z-index:-1;pointer-events:none;background:var(--bg)}
+.aura{opacity:.7;position:absolute;inset:0;background:radial-gradient(70% 55% at 88% 10%,var(--c1),transparent 70%),radial-gradient(65% 55% at 6% 92%,var(--c2),transparent 70%);transition:--c1 1.6s ease,--c2 1.6s ease}
+#stars{position:absolute;inset:0;width:100%;height:100%}
+#fx{position:fixed;inset:0;width:100%;height:100%;z-index:11;pointer-events:none}
+
+/* ---------- story: one orbit line connects everything ---------- */
+.story{position:relative;overflow-x:clip}
+.opath{position:absolute;left:0;top:0;width:100%;height:100%;z-index:1;pointer-events:none;overflow:visible}
+.opath path{fill:none;stroke-linecap:round}
+.p-edge{stroke:rgba(150,130,255,.22);stroke-width:34;filter:drop-shadow(0 0 12px rgba(139,108,255,.38))}
+.p-road{stroke:rgba(11,9,42,.72);stroke-width:28}
+.p-track{stroke:rgba(255,255,255,.3);stroke-width:2.5;stroke-dasharray:12 16}
+.p-glow{stroke:url(#og);stroke-width:16;opacity:.16}
+.p-line{stroke:url(#og);stroke-width:3}
+#og stop{transition:stop-color 1.2s ease}
+html.lite #og stop{transition:none}
+html.anim .p-track{animation:road 46s linear infinite}
+@keyframes road{to{stroke-dashoffset:-840}}
+.opath .cs path{fill:#FFE699;stroke:#fff;stroke-width:.7;stroke-linejoin:round;filter:drop-shadow(0 0 5px rgba(255,214,120,.95));transform-box:fill-box;transform-origin:center}
+html.anim .opath .cs path{animation:tws 2.6s ease-in-out infinite}
+@keyframes tws{50%{transform:scale(.78);opacity:.7}}
+html.anim .opath .cs.got path{animation:gotS .55s ease-out forwards}
+@keyframes gotS{to{transform:scale(2.8);opacity:0}}
+html.lite .opath .cs{display:none}
+
+/* the rocket */
+.rkt{position:absolute;left:0;top:0;width:clamp(40px,4.4vw,60px);z-index:12;pointer-events:none;will-change:transform;transform:translate3d(-100px,0,0);--gc:255,140,60}
+.rk-in{position:relative}
+html.anim .rk-in{animation:bob 2.6s ease-in-out infinite}
+@keyframes bob{50%{translate:0 -4px}}
+.rk-img{position:relative;z-index:2;width:100%;filter:drop-shadow(0 0 10px rgba(var(--gc),.6))}
+.rk-glow{position:absolute;z-index:1;left:-48%;bottom:-48%;width:100%;height:100%;border-radius:50%;background:radial-gradient(closest-side,rgba(var(--gc),.95),rgba(var(--gc),.3) 55%,transparent 72%);opacity:calc(.3 + var(--b,0)*.7);scale:calc(.7 + var(--b,0)*1.1)}
+.rk-halo{position:absolute;z-index:1;inset:-24%;border-radius:50%;border:1.5px dashed rgba(var(--gc),.75);opacity:0;transition:opacity .6s}
+html.anim .rk-halo{animation:spin 7s linear infinite}
+#p3[data-lv="2"]{--gc:34,196,255}
+#p3[data-lv="3"]{--gc:34,220,160}
+#p3[data-lv="4"]{--gc:255,176,40}
+#p3[data-lv="5"]{--gc:190,120,255}
+#p3[data-lv="3"] .rk-halo,#p3[data-lv="4"] .rk-halo,#p3[data-lv="5"] .rk-halo{opacity:.9}
+
+.dx{position:absolute;z-index:2;pointer-events:none}
+
+/* ---------- shared bits ---------- */
+.tag{display:inline-flex;align-items:center;gap:9px;margin:0 0 18px;padding:6px 14px;border-radius:99px;border:1px solid rgba(34,196,255,.38);background:rgba(34,196,255,.08);font:600 .7rem var(--mono);letter-spacing:.14em;text-transform:uppercase;color:#BDEBFF}
+.tag .dot{width:7px;height:7px;border-radius:50%;background:#5CFFB0;box-shadow:0 0 10px #5CFFB0;animation:blink 1.4s steps(1) infinite}
+.sec-head{text-align:left;max-width:min(470px,42%);margin:0 auto clamp(26px,4vw,50px) 0}
+.sec-head h2{font-size:clamp(2rem,4.8vw,3.3rem);line-height:1.08;font-weight:800;letter-spacing:-.02em;margin:0 0 12px;text-wrap:balance}
+.lead{color:var(--mut);margin:0;text-wrap:pretty}
+.cta{display:flex;flex-wrap:wrap;gap:14px}
+
+/* ---------- hero ---------- */
+.hero{position:relative;padding:clamp(100px,12vw,128px) 0 clamp(28px,4vw,56px)}
+.hero-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:24px;align-items:center}
+.hero h1{font-size:clamp(2.7rem,6.6vw,5rem);line-height:1.04;font-weight:800;letter-spacing:-.03em;margin:0 0 22px}
+.hero h1 span{display:block}.hero h1 .a{color:var(--cy)}.hero h1 .b{color:var(--vi)}
+.hero h1 .g{position:relative;display:inline-block;background:linear-gradient(90deg,#B9A8FF,#8B6CFF 60%,#6C8CFF);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero h1 .g i{-webkit-text-fill-color:var(--cy)}
+.swoosh{position:absolute;left:2%;bottom:-14px;width:96%;height:18px;overflow:visible}
+.hero .lead{max-width:30em;font-size:clamp(1rem,2vw,1.15rem);line-height:1.65;margin-bottom:28px}
+.cue{display:flex;align-items:center;gap:12px;margin-top:34px;font:600 .7rem var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--mut)}
+.cue i{position:relative;width:20px;height:32px;border:2px solid rgba(160,140,255,.6);border-radius:12px}
+.cue i::after{content:"";position:absolute;left:50%;top:6px;width:3px;height:7px;margin-left:-1.5px;border-radius:2px;background:var(--cy);animation:wheel 1.7s ease-in-out infinite}
+@keyframes wheel{0%{opacity:0;translate:0 0}30%{opacity:1}100%{opacity:0;translate:0 10px}}
+.stage{position:relative;width:100%;max-width:560px;aspect-ratio:1/.92;justify-self:center}
+.stage img{position:absolute}
+.stage::before{content:"";position:absolute;inset:4% 0 0 8%;border-radius:50%;background:radial-gradient(closest-side,rgba(139,108,255,.5),rgba(34,196,255,.12) 62%,transparent 74%)}
+
+.astro{right:10%;bottom:0;width:62%}
+.p1{right:-1%;top:0;width:36%}.p2{right:1%;top:46%;width:15%}
+
+/* ---------- stations ---------- */
+.stations{padding-top:clamp(36px,6vw,80px);padding-bottom:clamp(16px,3vw,40px)}
+.st{display:grid;grid-template-columns:1fr clamp(170px,18vw,230px) 1fr;grid-template-areas:". art txt";align-items:center;column-gap:clamp(16px,3vw,44px);width:100%;margin:0 0 clamp(44px,6.5vw,96px);padding:0}
+.st:nth-child(even){grid-template-areas:"txt art ."}
+.st-art{grid-area:art;position:relative;justify-self:center;width:clamp(120px,14vw,170px);translate:-6.2vw 0}
+.st:nth-child(even) .st-art{translate:6.2vw 0}
+.st-txt{grid-area:txt;justify-self:start;width:100%;max-width:430px}
+.st:nth-child(even) .st-txt{justify-self:end}
+.st-art::before{content:"";position:absolute;inset:-18%;border-radius:50%;background:radial-gradient(closest-side,rgba(139,108,255,.42),transparent 72%)}
+.st-art img{position:relative;z-index:1;width:100%}
+.st-art::after,.world-art::after{content:"";position:absolute;z-index:2;inset:4%;border-radius:50%;border:2px solid var(--cy);opacity:0;pointer-events:none}
+.ping::after{animation:ping 1.3s ease-out}
+@keyframes ping{0%{opacity:.95;scale:.7}100%{opacity:0;scale:1.8}}
+.xp{position:absolute;z-index:6;left:50%;top:8%;translate:-50% 0;font:800 1rem var(--mono);color:#FFE699;text-shadow:0 0 14px rgba(255,190,60,.9);pointer-events:none;white-space:nowrap;animation:xp 1.6s ease-out forwards}
+@keyframes xp{0%{opacity:0;translate:-50% 12px}18%{opacity:1}100%{opacity:0;translate:-50% -64px}}
+.reached .st-art img,.reached.world .world-img{filter:drop-shadow(0 0 22px rgba(139,108,255,.65))}
+.st-txt{position:relative;min-width:0;padding:20px 24px 22px;border-radius:20px;background:linear-gradient(160deg,rgba(22,18,58,.6),rgba(8,11,30,.42));border:1px solid rgba(255,255,255,.09);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);transform:perspective(900px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg));transition:transform .22s ease,border-color .4s,box-shadow .4s}
+.st-txt::before{content:"";position:absolute;left:0;top:20px;bottom:20px;width:2px;border-radius:2px;background:linear-gradient(180deg,var(--cy),var(--vi));opacity:.55}
+.st.reached .st-txt{border-color:rgba(34,196,255,.5);box-shadow:0 0 36px rgba(139,108,255,.25)}
+.sec-row{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px;margin:0 0 8px}
+.sector{font:600 .66rem var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--mut)}
+.chip{font:700 .62rem var(--mono);letter-spacing:.12em;padding:3px 9px;border-radius:99px;color:#7CFFC4;background:rgba(92,255,176,.1);border:1px solid rgba(92,255,176,.4)}
+.chip::before{content:"✓ UNLOCKED"}
+html.anim .st:not(.reached) .chip{color:var(--mut);background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.16)}
+html.anim .st:not(.reached) .chip::before{content:"◌ LOCKED"}
+.st-code{display:none}
+.st h3{font-size:clamp(1.35rem,2.6vw,2rem);margin:0 0 6px;font-weight:800;letter-spacing:-.01em}
+.st p.d{color:var(--mut);margin:0 0 12px;line-height:1.55;font-size:.95rem}
+.lnk{color:var(--tx);font-weight:700;font-size:.92rem;text-decoration:none;border-bottom:2px solid var(--vi);padding-bottom:2px;transition:border-color .2s}
+.lnk:hover{border-color:var(--cy)}
+
+/* ---------- worlds ---------- */
+.worlds{position:relative;margin-top:0;display:grid;grid-template-columns:repeat(2,1fr);column-gap:clamp(90px,14vw,210px);max-width:1060px;margin:0 auto}
+.gut{position:absolute;left:50%;top:0;width:2px;height:100%;pointer-events:none}
+.wp{position:absolute;left:0;right:0;height:1px;pointer-events:none;opacity:0}
+.world-body{margin-top:20px;padding:16px 20px 20px;border-radius:20px;background:linear-gradient(160deg,rgba(22,18,58,.6),rgba(8,11,30,.42));border:1px solid rgba(255,255,255,.09)}
+.world{text-align:center}
+.world-art{position:relative;width:min(100%,340px);margin:0 auto}
+.world-art::before{content:"";position:absolute;left:-16%;right:-16%;top:46%;height:34%;border-radius:50%;border:2px solid rgba(160,140,255,.55);box-shadow:0 0 22px rgba(139,108,255,.5),inset 0 0 22px rgba(139,108,255,.25);transform:rotate(-3deg)}
+.world-img{position:relative;z-index:1;width:100%}
+.badge{position:absolute;z-index:2;left:50%;bottom:16%;transform:translateX(-50%);width:74%;padding:9px 10px 10px;border-radius:16px;background:rgba(38,28,108,.8);border:1px solid rgba(255,255,255,.28);box-shadow:0 8px 24px rgba(0,0,0,.35)}
+.badge h3{margin:0 0 6px;font-size:clamp(1rem,2.1vw,1.35rem);line-height:1.15;font-weight:800}
+.pill{display:inline-block;padding:3px 12px;border-radius:99px;background:rgba(34,196,255,.2);border:1px solid rgba(34,196,255,.5);font:600 .72rem var(--mono);color:#CFF3FF}
+.world .d{color:var(--mut);margin:0 auto 10px;max-width:26em;line-height:1.6;font-size:.95rem}
+.world .meta{font:500 .78rem var(--mono);color:var(--cy);margin:0 0 16px}
+.gut-l{position:absolute;left:50%;bottom:-8px;width:2px;height:2px;margin-left:-1px;pointer-events:none}
+
+/* ---------- build ---------- */
+.build{position:relative;padding:clamp(56px,8vw,100px) 0 0}
+.build-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(24px,5vw,64px);align-items:center}
+.build h2{font-size:clamp(2.2rem,5.2vw,3.8rem);line-height:1.05;font-weight:800;letter-spacing:-.02em;margin:0 0 16px}
+.build h2 em,.launch h2 em{font-style:normal;display:block;background:linear-gradient(90deg,#22C4FF,#8B9BFF);-webkit-background-clip:text;background-clip:text;color:transparent}
+.build .lead{max-width:28em;line-height:1.65;margin-bottom:18px}
+.build .code{margin:0 0 24px}
+.build-stage{position:relative}
+.build-stage::before{content:"";position:absolute;inset:0 -4% 6%;border-radius:50%;background:radial-gradient(closest-side,rgba(139,108,255,.4),transparent 72%)}
+.holo{position:relative;z-index:2;width:100%}
+.trust{display:flex;justify-content:center;flex-wrap:nowrap;margin-top:clamp(28px,5vw,56px);padding-bottom:clamp(8px,2vw,20px)}
+.trust>div{display:flex;align-items:center;gap:12px;padding:8px clamp(10px,1.8vw,26px);border-left:1px solid var(--bd)}
+.trust>div:first-child{border-left:0}
+.trust svg{flex:none;color:var(--vi)}
+.trust h4{margin:0;font-size:.98rem;font-weight:800}.trust p{margin:0;color:var(--mut);font-size:.84rem;line-height:1.35}
+
+/* ---------- touchdown ---------- */
+.launch{position:relative;text-align:center;padding:clamp(70px,10vw,130px) 0 0}
+.launch h2{font-size:clamp(2.4rem,6vw,4.4rem);line-height:1.05;font-weight:800;letter-spacing:-.02em;margin:0 0 16px}
+.launch .lead{margin:0 auto 20px;max-width:34em;line-height:1.65;font-size:clamp(1rem,2vw,1.12rem)}
+.score{display:inline-flex;flex-wrap:wrap;justify-content:center;gap:6px 18px;margin:0 0 26px;padding:9px 20px;border-radius:99px;border:1px solid var(--bd);background:rgba(10,15,40,.7);font:600 .78rem var(--mono);color:var(--mut)}
+.score b{color:#FFE699}
+.launch .cta{justify-content:center}
+.pad{position:relative;z-index:3;width:min(260px,62%);height:70px;margin:clamp(120px,13vw,190px) auto 0}
+.pad::after{content:"";position:absolute;left:-6%;right:-6%;bottom:-4px;height:26px;border-radius:50%;background:radial-gradient(closest-side,rgba(34,196,255,.75),rgba(139,108,255,.38) 58%,transparent 74%)}
+.ground{position:relative;z-index:2;height:clamp(80px,13vw,200px);overflow:hidden;margin-top:-34px}
+.ground img{width:100%;height:100%;object-fit:cover;object-position:bottom}
+
+/* ---------- mission HUD ---------- */
+.hud{position:fixed;inset:0;z-index:900;pointer-events:none;opacity:0;visibility:hidden;transition:opacity .5s,visibility .5s}
+.hud.on{opacity:1;visibility:visible}
+.hud.off{opacity:0;visibility:hidden}
+html.lite .hud{display:none}
+.rail{position:absolute;right:14px;top:50%;translate:0 -50%;display:flex;flex-direction:column;gap:12px;pointer-events:auto}
+.rail::before{content:"";position:absolute;left:50%;top:6px;bottom:6px;width:1px;background:linear-gradient(var(--vi),var(--cy));opacity:.35}
+.rail button{position:relative;width:18px;height:18px;min-height:0!important;padding:0;display:flex;align-items:center;justify-content:center}
+.rail button i{display:block;width:10px;height:10px;border-radius:50%;border:2px solid rgba(160,140,255,.7);background:#0D1433;transition:transform .3s,background .3s,box-shadow .3s}
+.rail button.done i{background:var(--vi);border-color:var(--vi)}
+.rail button.on i{background:var(--cy);border-color:#fff;box-shadow:0 0 14px var(--cy);transform:scale(1.35)}
+.rail button span{position:absolute;right:28px;top:50%;translate:0 -50%;white-space:nowrap;padding:4px 10px;border-radius:8px;font:600 .68rem var(--mono);background:rgba(8,12,34,.94);border:1px solid var(--bd);color:#E7E2FF;opacity:0;pointer-events:none;transition:opacity .2s}
+.rail button:hover span,.rail button:focus-visible span{opacity:1}
+.hud-stats{position:absolute;right:48px;bottom:18px;display:flex;align-items:center;gap:18px;padding:10px 16px 13px;border-radius:16px;overflow:hidden;background:rgba(8,12,34,.8);border:1px solid var(--bd);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);font-family:var(--mono)}
+.hs-sector small{display:block;font-size:.58rem;letter-spacing:.14em;text-transform:uppercase;color:var(--cy)}
+.hs-sector b{font-size:.84rem;font-weight:700;color:#fff;white-space:nowrap}
+.hs-nums{display:flex;gap:14px;font-size:.76rem;color:var(--mut);white-space:nowrap}
+.hs-nums b{color:#FFE699;font-weight:700}
+.hs-bar{position:absolute;left:0;right:0;bottom:0;height:3px;background:rgba(255,255,255,.08)}
+.hs-bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--cy),var(--vi))}
+
+/* ---------- countdown ---------- */
+.cdn{position:fixed;inset:0;z-index:3000;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;text-align:center;background:radial-gradient(60% 50% at 50% 58%,rgba(70,44,180,.6),rgba(4,6,15,.97));opacity:0;transition:opacity .4s;overflow:hidden}
+.cdn.on{opacity:1}
+.cdn-n{font:800 clamp(4.5rem,22vw,11rem)/1 var(--mono);color:#fff;text-shadow:0 0 44px rgba(34,196,255,.85);animation:pn .8s ease-out infinite}
+@keyframes pn{0%{transform:scale(1.45);opacity:0}30%{opacity:1}100%{transform:scale(.92);opacity:.85}}
+.cdn-t{margin:0;font:600 .82rem var(--mono);letter-spacing:.2em;text-transform:uppercase;color:var(--cy)}
+.cdn-skip{margin-top:8px;padding:8px 20px;border-radius:99px;border:1px solid var(--bd);color:var(--mut);font:600 .74rem var(--mono);letter-spacing:.1em}
+.cdn-rk{position:absolute;left:50%;bottom:7vh;width:64px;margin-left:-32px;rotate:-45deg}
+.cdn.lift .cdn-rk{transition:translate 1.3s cubic-bezier(.55,0,1,.55);translate:0 -130vh}
+.cdn.lift .cdn-n{animation:none;color:#FFE699}
+
+/* ---------- motion ---------- */
+html.anim .pop{opacity:0;scale:.6}
+html.anim .pop.in{opacity:1;scale:1;transition:opacity .5s,scale .6s cubic-bezier(.2,1.3,.4,1)}
+@keyframes fl{50%{translate:0 -10px}}
+html.anim .fl{animation:fl 6s ease-in-out infinite}html.anim .fl.d2{animation-delay:-2s}html.anim .fl.d3{animation-delay:-4s}
+@keyframes up{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+html.anim .hero h1 span{animation:up .8s cubic-bezier(.2,.8,.2,1) both}
+html.anim .hero h1 span:nth-child(2){animation-delay:.14s}
+html.anim .hero .tag{animation:up .8s cubic-bezier(.2,.8,.2,1) both}
+html.anim .hero .lead,html.anim .hero .cta,html.anim .hero .cue{animation:up .8s .4s cubic-bezier(.2,.8,.2,1) both}
+html.anim .rv{opacity:0;translate:0 30px}
+html.anim .rv.in{opacity:1;translate:0 0;transition:opacity .8s ease,translate .8s cubic-bezier(.2,.8,.2,1),transform .22s ease,border-color .4s,box-shadow .4s}
+.world:hover .world-art::before{border-color:rgba(34,196,255,.7)}
+
+/* ---------- responsive ---------- */
+@media (max-width:1100px){.rail{display:none}.hud-stats{left:50%;right:auto;bottom:14px;transform:translateX(-50%);max-width:calc(100vw - 32px)}}
+@media (max-width:860px){
+.sec-head{max-width:none;padding-left:14px}
+.hero-grid,.build-grid{grid-template-columns:1fr}.stage{max-width:430px}
+.cue{display:none}
+.st,.st:nth-child(even){grid-template-columns:clamp(84px,24vw,112px) 1fr;grid-template-areas:"art txt";column-gap:16px}
+.st-art,.st:nth-child(even) .st-art{width:clamp(76px,21vw,100px);translate:0 0}
+.st-txt,.st:nth-child(even) .st-txt{justify-self:stretch;max-width:none}
+.st-txt{padding:14px 16px 16px}
+.worlds{grid-template-columns:1fr;max-width:400px;gap:40px}
+.gut-l{left:50%;right:auto;margin-left:-1px}
+.trust{flex-wrap:wrap}.trust>div{width:50%;border-left:0;padding:10px 6px}
+.dx.moonbig{display:none}
+.rkt{width:38px}
+.p-edge{stroke-width:20}.p-road{stroke-width:15}.p-glow{stroke-width:11}.p-line{stroke-width:2.5}.p-track{stroke-dasharray:6 10}
+.hud-stats{left:10px;right:10px;bottom:10px;transform:none;justify-content:space-between;gap:10px;padding:8px 14px 12px}
+.hs-sector b{font-size:.78rem}.hs-nums{gap:10px;font-size:.7rem}
+}
+@media (max-width:420px){.hs-nums .hs-lv{display:none}}
+@media (prefers-reduced-motion:reduce){html .fl,html .fchip{animation:none!important}}
+</style>
+</head>
+<body class="co">
+
+  <!-- deep space: stars, colour aura, particles, mission HUD -->
+  <div class="cosmos" aria-hidden="true"><div class="aura" id="aura"></div><canvas id="stars"></canvas></div>
+  <canvas id="fx" aria-hidden="true"></canvas>
+  <div class="hud" id="hud">
+    <nav class="rail" id="hud-rail" aria-label="Mission sectors"></nav>
+    <div class="hud-stats" aria-hidden="true">
+      <div class="hs-sector"><small id="hud-num">Sector 00</small><b id="hud-name">Launchpad</b></div>
+      <div class="hs-nums"><span class="hs-lv">SHIP LV.<b id="hud-lv">1</b></span><span>★ <b id="hud-stars">0</b>/<span id="hud-max">0</span></span><span>XP <b id="hud-xp">0</b></span></div>
+      <div class="hs-bar"><i id="hud-bar"></i></div>
+    </div>
+  </div>
+
+  <header class="glass-header" id="main-nav-header">
+    <div class="container nav-container">
+      <a href="/code-orbit/index.html" class="brand-logo" id="brand-logo-link"><img src="assets/images/orbit/logo.webp" alt="SPS Code Orbit" class="logo-img" width="560" height="171" fetchpriority="high"></a>
+
+      <nav class="nav-links" id="primary-nav-links" aria-label="Main">
+        <a href="/code-orbit/courses.html" class="nav-link" id="nav-link-courses">Courses</a>
+        <a href="/code-orbit/challenges.html" class="nav-link" id="nav-link-challenges">Challenges</a>
+        <a href="/code-orbit/about.html" class="nav-link" id="nav-link-about">About</a>
+        <div class="mobile-drawer-actions" id="mobile-drawer-actions">
+          <a href="/code-orbit/login.html" class="btn-pill btn-glass drawer-link">Log In</a>
+          <a href="/code-orbit/signup.html" class="btn-pill btn-primary-cyan drawer-link">Get Started</a>
+        </div>
+      </nav>
+
+      <div class="nav-auth" id="header-auth-group">
+        <a href="/code-orbit/login.html" class="login-link" id="nav-btn-login">Log In</a>
+        <a href="/code-orbit/signup.html" class="btn-pill btn-white-pill" id="nav-btn-get-started">Get Started</a>
+      </div>
+
+      <button type="button" class="mobile-nav-btn" id="mobile-nav-btn" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav-links">
+        <i data-lucide="menu" style="width: 22px; height: 22px;"></i>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-nav-backdrop" id="mobile-nav-backdrop" hidden></div>
+
+  <main>
+  <div class="story" id="story">
+    <svg class="opath" id="opath" aria-hidden="true"><defs><linearGradient id="og" x1="0" y1="0" x2="1" y2="1"><stop id="og1" offset="0" stop-color="#22C4FF"/><stop id="og2" offset=".55" stop-color="#8B6CFF"/><stop id="og3" offset="1" stop-color="#22C4FF"/></linearGradient></defs><path class="p-edge" id="pe"/><path class="p-road" id="pr"/><path class="p-track" id="pt"/><path class="p-glow" id="pg"/><path class="p-line" id="pl"/><g id="coll"></g></svg>
+    <div id="p3" class="rkt pop" data-lv="1" aria-hidden="true"><div class="rk-in"><i class="rk-halo"></i><i class="rk-glow"></i><img class="rk-img" src="assets/images/orbit/rocket.webp" width="381" height="420" alt=""></div></div>
+    <span class="dx moonbig" style="right:-7%;top:3%;width:30%"><img data-px="-0.1" src="assets/images/orbit/moon.webp" width="420" height="416" alt="" aria-hidden="true" style="opacity:.55"></span>
+
+    <!-- SECTOR 00 · LAUNCHPAD -->
+    <section class="hero" id="hero-section">
+      <div class="container hero-grid" data-a="0.45:.99:.5">
+        <div>
+          <p class="tag"><i class="dot"></i>Mission 001 · Launchpad</p>
+          <h1 id="hero-headline"><span>Learn<i class="a">.</i> Code<i class="b">.</i></span><span class="g">Explore<i>.</i><svg class="swoosh" viewBox="0 0 300 18" preserveAspectRatio="none" aria-hidden="true"><defs><linearGradient id="sw"><stop offset="0" stop-color="#8B6CFF"/><stop offset="1" stop-color="#22C4FF"/></linearGradient></defs><path d="M3 13C70 3 190 2 297 11" fill="none" stroke="url(#sw)" stroke-width="4" stroke-linecap="round"/></svg></span></h1>
+          <p class="lead" id="hero-description">Interactive learning in programming, artificial intelligence, robotics, and creative technology for students from primary school through secondary school.</p>
+          <div class="cta" id="hero-cta-group">
+            <a href="/code-orbit/signup.html" class="btn-pill btn-primary-cyan" id="hero-btn-start"><span>Start Learning</span><i data-lucide="arrow-right" style="width:18px;height:18px"></i></a>
+            <a href="/code-orbit/courses.html" class="btn-pill btn-glass" id="hero-btn-explore"><span>Explore Courses</span><i data-lucide="arrow-right" style="width:18px;height:18px"></i></a>
+          </div>
+          <div class="cue" aria-hidden="true"><i></i><span>Scroll to launch</span></div>
+        </div>
+        <div class="stage" data-a="0:.97:.55">
+          <img class="astro fl" data-depth=".8" src="assets/images/orbit/astronaut-pointing.webp" width="646" height="820" alt="Friendly astronaut robot pointing the way" fetchpriority="high">
+          <img class="pop fl d2 p1" data-depth="1.5" src="assets/images/orbit/planet-smile.webp" width="360" height="242" alt="" decoding="async">
+          <img class="pop fl d3 p2" data-depth="2" src="assets/images/orbit/star.webp" width="300" height="297" alt="" decoding="async">
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTORS 01-04 · THE JOURNEY -->
+    <section class="journey" id="features-section">
+      <h2 class="sr">Why Choose Code Orbit?</h2>
+      <div class="container stations" id="features-grid">
+        <article class="st" id="feature-card-learn">
+          <div class="st-art" data-a="1:.04 1.5:.96" data-xp="100" data-up="2"><img class="pop" src="assets/images/orbit/planet-learn.webp" width="560" height="538" alt="Purple planet with an open book" loading="lazy" decoding="async"></div>
+          <div class="st-txt rv">
+            <div class="sec-row"><span class="sector">Sector 01 · Learn Nebula</span><span class="chip"></span></div>
+            <h3>Learn</h3>
+            <p class="d">Engage with interactive lessons, bite-sized cosmic concepts, and guided missions.</p>
+            <a href="/code-orbit/courses.html" class="lnk" aria-label="Explore lessons">Start Course Track</a>
+          </div>
+        </article>
+        <article class="st" id="feature-card-practice">
+          <div class="st-art" data-a="2:.04 2.5:.96" data-xp="100" data-up="3"><img class="pop" src="assets/images/orbit/planet-practice.webp" width="542" height="560" alt="Green planet with a laptop showing code" loading="lazy" decoding="async"></div>
+          <div class="st-txt rv">
+            <div class="sec-row"><span class="sector">Sector 02 · Practice Planet</span><span class="chip"></span></div>
+            <h3>Practice</h3>
+            <p class="d">Apply concepts in live zero-gravity sandboxes with instant visual feedback.</p>
+            <a href="/code-orbit/challenges.html" class="lnk" aria-label="Practice hands-on exercises">Open Sandboxes</a>
+          </div>
+        </article>
+        <article class="st" id="feature-card-challenge">
+          <div class="st-art" data-a="3:.04 3.5:.96" data-xp="100" data-up="4"><img class="pop" src="assets/images/orbit/planet-challenge.webp" width="467" height="560" alt="Yellow planet holding a golden trophy" loading="lazy" decoding="async"></div>
+          <div class="st-txt rv">
+            <div class="sec-row"><span class="sector">Sector 03 · Challenge Moon</span><span class="chip"></span></div>
+            <h3>Challenge</h3>
+            <p class="d">Tackle planetary code puzzles, unlock daily streaks, and conquer quests.</p>
+            <a href="/code-orbit/challenges.html" class="lnk" aria-label="Test your skills in challenges">Accept Missions</a>
+          </div>
+        </article>
+        <article class="st" id="feature-card-build">
+          <div class="st-art" data-a="4:.04 4.5:.96" data-xp="100" data-up="5"><img class="pop" src="assets/images/orbit/alien-ufo.webp" width="420" height="344" alt="Friendly green alien waving from a UFO" loading="lazy" decoding="async"></div>
+          <div class="st-txt rv">
+            <div class="sec-row"><span class="sector">Sector 04 · Alien Outpost</span><span class="chip"></span></div>
+            <h3>Build</h3>
+            <p class="d">Transform your skills into real web apps, multiplayer games, and cosmic tools.</p>
+            <a href="/code-orbit/student/dashboard.html" class="lnk" aria-label="Build and showcase projects">Showcase Creations</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SECTOR 05 · DEEP SPACE -->
+    <section id="courses-section">
+      <div class="container">
+        <header class="sec-head rv">
+          <p class="tag">Sector 05 · Deep Space</p>
+          <h2>Choose Your World</h2>
+          <p class="lead">Every planet is a full course. Pick one and start exploring.</p>
+          <p style="margin:18px 0 0"><a href="/code-orbit/courses.html" class="btn-pill btn-glass" id="btn-view-all-courses"><span>View All Worlds</span><i data-lucide="arrow-right" style="width:16px;height:16px"></i></a></p>
+        </header>
+        <div class="worlds" id="popular-courses-grid">
+          <article class="world" id="course-card-programming-foundations">
+            <div class="world-art" data-xp="100">
+              <img class="world-img pop fl" src="assets/images/orbit/world-programming.webp" width="700" height="479" alt="Programming Foundations planet" loading="lazy" decoding="async">
+              <div class="badge"><h3>Programming Foundations</h3><span class="pill">6 Chapters · 24 Lessons</span></div>
+            </div>
+            <div class="world-body">
+            <p class="d">The complete foundational course: discover what programming truly is, how computers work, and master algorithmic thinking.</p>
+            <p class="meta">Level 1: Foundations · Start Here</p>
+            <a href="/code-orbit/student/course.html?id=course-programming-foundations" class="btn-pill btn-glass"><span>Enter World</span><i data-lucide="arrow-right" style="width:15px;height:15px"></i></a>
+            </div>
+          </article>
+          <article class="world" id="course-card-python-foundations">
+            <div class="world-art" data-xp="100">
+              <img class="world-img pop fl d2" src="assets/images/orbit/world-python.webp" width="700" height="528" alt="Python Foundations planet" loading="lazy" decoding="async">
+              <div class="badge"><h3>Python Foundations</h3><span class="pill">10 Chapters · 40 Lessons</span></div>
+            </div>
+            <div class="world-body">
+            <p class="d">Build robust programming fundamentals from scratch using Python. Master variables, branching logic, loops, collections, and algorithms.</p>
+            <p class="meta">Level 1: Foundations</p>
+            <a href="/code-orbit/student/course.html?id=course-python-foundations" class="btn-pill btn-glass"><span>Enter World</span><i data-lucide="arrow-right" style="width:15px;height:15px"></i></a>
+            </div>
+          </article>
+          <span class="gut" data-a="5:.02 5.6:.98" aria-hidden="true"></span>
+          <i class="wp" style="top:35%" data-a="5.2:.5:.56" aria-hidden="true"></i>
+          <i class="wp" style="top:68%" data-a="5.4:.5:.44" aria-hidden="true"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTOR 06 · MISSION CONTROL -->
+    <section class="build" id="playground-banner-section">
+      <div class="container build-grid">
+        <div class="rv">
+          <p class="tag">Sector 06 · Mission Control</p>
+          <h2>Build Something <em>Amazing</em></h2>
+          <p class="lead">Turn your ideas into real projects. In Code Orbit, your code breaks out of the screen to become living games, interactive robots, and cosmic web creations.</p>
+          <div class="cta">
+            <button class="btn-pill btn-primary-cyan" id="btn-open-playground" onclick="openPlaygroundModal()"><span>Enter Playground</span><i data-lucide="arrow-right" style="width:18px;height:18px"></i></button>
+            <a href="/code-orbit/challenges.html" class="btn-pill btn-glass" id="btn-explore-challenges"><span>Explore Missions</span><i data-lucide="arrow-right" style="width:16px;height:16px"></i></a>
+          </div>
+        </div>
+        <div class="build-stage" data-a="7:.1:.62" data-m="7:.1:.5" data-xp="100">
+          <img class="holo" src="assets/images/orbit/astronaut-hologram.webp" width="900" height="630" alt="Astronaut robot typing on a holographic code screen" loading="lazy" decoding="async">
+        </div>
+      </div>
+      <div class="container">
+        <div class="trust" id="trust-pillars-bar">
+          <div id="pillar-project-based"><i data-lucide="layers" style="width:28px;height:28px"></i><div><h4>Project Based</h4><p>Build real games, apps &amp; robots</p></div></div>
+          <div id="pillar-expert-mentors"><i data-lucide="user-check" style="width:28px;height:28px"></i><div><h4>Expert Mentors</h4><p>Guided by patient space educators</p></div></div>
+          <div id="pillar-flexible-learning"><i data-lucide="zap" style="width:28px;height:28px"></i><div><h4>Self-Paced Quests</h4><p>Learn at your comfortable speed</p></div></div>
+          <div id="pillar-safe-supportive"><i data-lucide="shield-check" style="width:28px;height:28px"></i><div><h4>Safe &amp; Inspiring</h4><p>Kind, kid-first space community</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTOR 07 · TOUCHDOWN -->
+    <section class="launch" id="launch">
+      <div class="container">
+        <div class="rv">
+          <p class="tag">Sector 07 · Touchdown</p>
+          <h2>Ready for <em>Liftoff?</em></h2>
+          <p class="lead">Your seat on the next mission is waiting. Pick a world, start coding, and let the adventure begin.</p>
+          <p class="score" id="score" aria-live="off"><span>★ <b id="score-stars">0</b> stars collected</span><span><b id="score-xp">0</b> XP earned on the way</span></p>
+          <div class="cta">
+            <a href="/code-orbit/signup.html" class="btn-pill btn-primary-cyan" id="btn-launch"><span>Launch My Mission</span><i data-lucide="rocket" style="width:18px;height:18px"></i></a>
+            <a href="/code-orbit/courses.html" class="btn-pill btn-glass" id="btn-final-courses"><span>Browse Worlds</span><i data-lucide="arrow-right" style="width:16px;height:16px"></i></a>
+          </div>
+        </div>
+        <span class="gut-l" data-a="7.5:.5:.5" aria-hidden="true"></span>
+      </div>
+      <div class="pad" id="pad" data-a="8:.52:.5" data-xp="150" aria-hidden="true"></div>
+    </section>
+  </div>
+  <div class="ground" aria-hidden="true"><img src="assets/images/orbit/ground.webp" width="1200" height="189" alt="" loading="lazy"></div>
+  </main>
+
+  <div class="modal-backdrop" id="playground-modal">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <i data-lucide="terminal" style="color: var(--color-cyan); width: 22px; height: 22px;"></i>
+          <span>Code Orbit Interactive Mission Lab</span>
+        </div>
+        <button class="btn-close-modal" onclick="closePlaygroundModal()" aria-label="Close playground">
+          <i data-lucide="x" style="width: 20px; height: 20px;"></i>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <div class="code-editor-box" style="display: flex; flex-direction: column;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.8rem;">
+            <span style="font-weight: 750; color: #cbd5e1; font-size: 0.9rem;">Interactive Code Editor</span>
+            <button class="btn-pill btn-primary-cyan" style="padding: 0.35rem 1rem; font-size: 0.82rem;" onclick="runInteractiveCode()">
+              <i data-lucide="play" style="width: 14px; height: 14px;"></i>
+              <span>Run Code</span>
+            </button>
+          </div>
+          <textarea class="code-textarea" id="interactive-code-input" spellcheck="false">&lt;div style="background: #0b112c; padding: 25px; border-radius: 16px; border: 1px solid #38bdf8; font-family: sans-serif; text-align: center;"&gt;
+  &lt;h2 style="color: #38bdf8; margin-top: 0;"&gt;🚀 Hello Future Space Coder!&lt;/h2&gt;
+  &lt;p style="color: #f8fafc; font-size: 15px;"&gt;Welcome aboard the Code Orbit Deep Space Station. You are writing live browser code!&lt;/p&gt;
+  &lt;div style="margin: 20px 0;"&gt;
+    &lt;span style="display: inline-block; padding: 8px 16px; background: rgba(56, 189, 248, 0.2); color: #7dd3fc; border-radius: 20px; font-weight: bold;"&gt;Mission: Star Explorer&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;button style="background: linear-gradient(135deg, #38bdf8, #f472b6); color: #04060f; border: none; padding: 12px 24px; border-radius: 24px; font-weight: 800; cursor: pointer; box-shadow: 0 4px 15px rgba(56, 189, 248, 0.5);" onclick="alert('🌟 Starlight Booster Activated! You are awesome!')"&gt;Activate Starlight Booster&lt;/button&gt;
+&lt;/div&gt;</textarea>
+        </div>
+
+        <div class="code-preview-box" style="display: flex; flex-direction: column;">
+          <div style="font-size: 0.82rem; font-weight: 750; color: #94a3b8; margin-bottom: 0.8rem; letter-spacing: 0.05em;">LIVE PREVIEW VIEWPORT</div>
+          <iframe class="preview-iframe" id="interactive-preview-frame"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <footer class="space-footer" id="main-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <!-- Col 1: Brand & Socials -->
+        <div class="footer-brand-col">
+          <a href="/code-orbit/index.html" class="brand-logo" style="margin-bottom: 0.6rem; display: inline-flex;"><img src="assets/images/orbit/logo.webp" alt="SPS Code Orbit" class="logo-img logo-foot" width="560" height="171" loading="lazy"></a>
+          <p class="footer-tagline">Small steps. Big cosmic dreams.</p>
+
+          <!-- Institutional branding: upload real logos to assets/images/ -->
+          <div class="footer-institutional-branding" role="group" aria-label="Institutional partners">
+            <div class="footer-institution-row">
+              <img class="footer-institution-logo" src="assets/images/sps-logo.jpg" alt="Salam Prep Secondary Schools logo" width="48" height="48" loading="lazy" onerror="this.style.display='none';">
+              <div class="footer-institution-text">
+                <span class="footer-institution-kicker">Official Technology Platform</span>
+                <span class="footer-institution-name">Salam Prep Secondary Schools</span>
+              </div>
+            </div>
+            <div class="footer-institution-row">
+              <img class="footer-institution-logo" src="assets/images/tech-department-logo.jpg" alt="Technological Development Department logo" width="48" height="48" loading="lazy" onerror="this.style.display='none';">
+              <div class="footer-institution-text">
+                <span class="footer-institution-kicker">Platform Steward</span>
+                <span class="footer-institution-name">Technological Development Department</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-icons-row" style="margin-top: 1rem;">
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="YouTube">
+              <svg width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="display: block;">
+                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814z" fill="#EF4444"/>
+                <path d="M9.545 15.568L15.818 12 9.545 8.432v7.136z" fill="#FFFFFF"/>
+              </svg>
+            </a>
+            <a href="https://discord.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Discord">
+              <i data-lucide="message-square" style="width: 20px; height: 20px;"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram">
+              <i data-lucide="instagram" style="width: 20px; height: 20px;"></i>
+            </a>
+            <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="TikTok">
+              <i data-lucide="music" style="width: 20px; height: 20px;"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div>
+          <h4 class="footer-col-title">Quick Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="/code-orbit/courses.html">Courses</a></li>
+            <li><a href="/code-orbit/challenges.html">Challenges</a></li>
+            <li><a href="/code-orbit/about.html">About</a></li>
+            <li><a href="/code-orbit/about.html#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Support -->
+        <div>
+          <h4 class="footer-col-title">Support</h4>
+          <ul class="footer-links-list">
+            <li><a href="/code-orbit/about.html">Help Center</a></li>
+            <li><a href="/code-orbit/about.html">Terms of Service</a></li>
+            <li><a href="/code-orbit/about.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Mascot Motto with Easter Egg -->
+        <div>
+          <div class="footer-planet-box" title="Cosmic greeting">
+            <div class="easter-egg-bubble" id="planet-easter-speech">
+              <code>print("Hello, Orbit explorer! ✨")</code>
+            </div>
+            <img src="assets/images/orbit/planet-smile.webp" alt="Code Orbit Planet Mascot" class="footer-planet-icon" width="360" height="242" loading="lazy">
+            <p class="footer-planet-text">
+              Together we code a brighter future &#9829;
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <p>&copy; 2026 Code Orbit. All rights reserved.</p>
+        <p class="footer-bottom-sub">
+          <span class="motif-code-bracket">{</span>
+          <span class="motif-star-spark">✦</span>
+          <span class="motif-code-bracket">}</span>
+          <span>A cute, vibrant space-tech adventure for young coders.</span>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="/code-orbit/js/session.js"></script>
+  <!-- index.html is intentionally ENGLISH-ONLY: no language toggle, no RTL, ignore stored lang -->
+  <script>
+    window.__SPS_LANDING_ENGLISH_ONLY__ = true;
+    try {
+      // Prevent i18n from applying Arabic/RTL on the landing page only
+      document.documentElement.setAttribute('lang', 'en');
+      document.documentElement.setAttribute('dir', 'ltr');
+      document.documentElement.classList.remove('rtl');
+    } catch (e) {}
+  </script>
+  <script src="/code-orbit/js/i18n.js?v=1.4"></script>
+  <script src="/code-orbit/js/components.js"></script>
+  <script src="/code-orbit/js/mobile-nav.js"></script>
+  <script>
+    (function () {
+      // After i18n loads: force EN presentation and strip any language switcher on index only
+      function forceLandingEnglish() {
+        try {
+          document.documentElement.setAttribute('lang', 'en');
+          document.documentElement.setAttribute('dir', 'ltr');
+          document.documentElement.classList.remove('rtl');
+          document.querySelectorAll('[data-lang-switcher]').forEach(function (el) {
+            el.remove();
+          });
+          // Do not call setLanguage — leave user preference intact for other pages
+        } catch (e) {}
+      }
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', forceLandingEnglish);
+      } else {
+        forceLandingEnglish();
+      }
+      // Catch late-mounted switchers
+      setTimeout(forceLandingEnglish, 100);
+      setTimeout(forceLandingEnglish, 500);
+    })();
+  </script>
+  <script>
+    // Modal Interactive Code Playground Functions
+    function openPlaygroundModal() {
+      const modal = document.getElementById('playground-modal');
+      if (modal) {
+        modal.classList.add('active');
+        runInteractiveCode();
+      }
+    }
+
+    function closePlaygroundModal() {
+      const modal = document.getElementById('playground-modal');
+      if (modal) {
+        modal.classList.remove('active');
+      }
+    }
+
+    function runInteractiveCode() {
+      const input = document.getElementById('interactive-code-input');
+      const frame = document.getElementById('interactive-preview-frame');
+      if (input && frame) {
+        const doc = frame.contentDocument || frame.contentWindow.document;
+        doc.open();
+        doc.write(`
+          <!DOCTYPE html>
+          <html>
+          <body style="background: #080c1e; color: #ffffff; padding: 20px; font-family: sans-serif;">
+            ${input.value}
+          
+  
+
+</body>
+          </html>
+        `);
+        doc.close();
+      }
+    }
+
+    // Initialize Lucide Icons & Initial Code Execution
+    document.addEventListener('DOMContentLoaded', () => {
+      if (window.lucide) {
+        window.lucide.createIcons();
+      }
+      runInteractiveCode();
+
+      // Mascot Easter egg messages
+      const planetBox = document.querySelector('.footer-planet-box');
+      const speechBubble = document.getElementById('planet-easter-speech');
+      if (planetBox && speechBubble) {
+        const greetings = [
+          'print("Hello, Orbit explorer! ✨")',
+          'mission_status = "ALL SYSTEMS GO 🚀"',
+          'const galaxies = ["Python", "JS", "CSS"]; 🌌',
+          'while (exploring) { codeFuture(); } ⭐',
+          'console.log("Together we code brighter! 💖")'
+        ];
+        let greetingIdx = 0;
+        planetBox.addEventListener('click', () => {
+          greetingIdx = (greetingIdx + 1) % greetings.length;
+          speechBubble.innerHTML = `<code>${greetings[greetingIdx]}</code>`;
+          speechBubble.style.opacity = '1';
+          speechBubble.style.transform = 'translateY(0)';
+          setTimeout(() => {
+            speechBubble.style.opacity = '';
+            speechBubble.style.transform = '';
+          }, 3200);
+        });
+      }
+    });
+
+    // Close modal on escape or backdrop click
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closePlaygroundModal();
+    });
+    const modalBackdrop = document.getElementById('playground-modal');
+    if (modalBackdrop) {
+      modalBackdrop.addEventListener('click', (e) => {
+        if (e.target === modalBackdrop) closePlaygroundModal();
+      });
+    }
+  </script>
+
+
+  <script>
+  /* Code Orbit landing: the whole page is one flight. A rocket rides the orbit line with the visitor,
+     the stars streak as you scroll, each planet is a checkpoint, and the ship upgrades along the way.
+     Vanilla JS. The page works fully without it (lite mode / reduced motion / no JS). */
+  (function(){
+    var d=document,h=d.documentElement,ioOK='IntersectionObserver' in window;
+    function $(i){return d.getElementById(i)}
+    function anim(){return h.classList.contains('anim')}
+    function cl(v,a,b){return v<a?a:v>b?b:v}
+    function rnd(a,b){return a+Math.random()*(b-a)}
+    function lerpA(a,b,t){var x=((b-a+540)%360)-180;return a+x*t}
+    function ss(x){x=cl(x,0,1);return x*x*(3-2*x)}
+
+    var story=$('story'),svg=$('opath'),pe=$('pe'),pr=$('pr'),pt=$('pt'),pg=$('pg'),pl=$('pl'),rk=$('p3'),coll=$('coll');
+    var hud=$('hud'),aura=$('aura'),cvS=$('stars'),cvF=$('fx'),ft=$('main-footer');
+    var px=[].slice.call(d.querySelectorAll('[data-px]')),vis=[];
+    var layers=[].slice.call(d.querySelectorAll('[data-depth]'));
+
+    /* ---------- the journey, sector by sector ---------- */
+    var SEC=[
+      {id:'hero-section',n:'00',name:'Launchpad',c1:'rgba(139,108,255,.32)',c2:'rgba(34,196,255,.16)',g:'#22C4FF,#8B6CFF,#22C4FF'},
+      {id:'feature-card-learn',n:'01',name:'Learn Nebula',c1:'rgba(139,108,255,.4)',c2:'rgba(91,140,255,.22)',g:'#9B7BFF,#C084FC,#22C4FF'},
+      {id:'feature-card-practice',n:'02',name:'Practice Planet',c1:'rgba(34,196,140,.3)',c2:'rgba(34,196,255,.22)',g:'#34E0A1,#22C4FF,#8B6CFF'},
+      {id:'feature-card-challenge',n:'03',name:'Challenge Moon',c1:'rgba(255,176,32,.28)',c2:'rgba(255,93,162,.2)',g:'#FFC24B,#FF7A9C,#8B6CFF'},
+      {id:'feature-card-build',n:'04',name:'Alien Outpost',c1:'rgba(110,240,150,.22)',c2:'rgba(139,108,255,.3)',g:'#7CFFB2,#8B6CFF,#22C4FF'},
+      {id:'courses-section',n:'05',name:'Deep Space',c1:'rgba(59,130,246,.32)',c2:'rgba(139,108,255,.26)',g:'#5B8CFF,#8B6CFF,#34E0A1'},
+      {id:'playground-banner-section',n:'06',name:'Mission Control',c1:'rgba(224,92,255,.28)',c2:'rgba(34,196,255,.24)',g:'#FF7AE0,#8B6CFF,#22C4FF'},
+      {id:'launch',n:'07',name:'Touchdown',c1:'rgba(255,122,69,.28)',c2:'rgba(139,108,255,.28)',g:'#FFE699,#FF9F6E,#8B6CFF'}
+    ];
+    var UPG={2:'Ion Trail online. Faster, brighter.',3:'Plasma Halo online. Shields up!',4:'Gold Booster online. Full thrust!',5:'Nova Drive online. Maximum power!'};
+    var PAL=[['255,214,122','255,122,69'],['205,246,255','34,196,255'],['185,255,228','34,200,150'],['255,238,150','255,170,40'],['255,205,255','150,110,255']];
+    SEC.forEach(function(s){s.el=$(s.id)});
+
+    /* ---------- state ---------- */
+    var W=0,H=0,dpr=1,ctxS=cvS&&cvS.getContext('2d'),ctxF=cvF&&cvF.getContext('2d');
+    var SW=0,SH=0,stTop=0,stLeft=0,L=0,N=0,ys=[],y0=0,y1=1,rw=40,rh=44;
+    var reach=[],cs=[],gotArr=[],stars=[],P=[];
+    var vh=innerHeight,sy=scrollY,psy=sy,cy=null,cyv=0,boost=0,ang=45,dirP=1,tmx=0,tmy=0,mx=0,my=0;
+    var xp=0,nStars=0,dispXP=0,lvl=1,act=-1,launched=false,landed=false,frames=0,raf=0,lt=0;
+    var ready=false;
+
+    /* ---------- geometry: build the flight path from where things really are ---------- */
+    function starPath(r){var p=[];for(var i=0;i<10;i++){var a=-Math.PI/2+i*Math.PI/5,rr=i%2?r*.45:r;p.push((rr*Math.cos(a)).toFixed(1)+','+(rr*Math.sin(a)).toFixed(1))}return 'M'+p.join('L')+'Z'}
+    function lenAtY(Y){
+      if(!N||Y<=ys[0])return 0;if(Y>=ys[N])return L;
+      var lo=0,hi=N;while(hi-lo>1){var m=(lo+hi)>>1;if(ys[m]<=Y)lo=m;else hi=m}
+      var f=(Y-ys[lo])/Math.max(.001,ys[hi]-ys[lo]);return L*(lo+f)/N;
+    }
+    function build(){
+      var sr=story.getBoundingClientRect();SW=sr.width;SH=sr.height;if(!SW||!SH)return;
+      stTop=sr.top+scrollY;stLeft=sr.left+scrollX;
+      var a=[];
+      d.querySelectorAll('[data-a]').forEach(function(e){
+        var r=e.getBoundingClientRect();
+        (innerWidth<860&&e.hasAttribute('data-m')?e.getAttribute('data-m'):e.getAttribute('data-a')).split(' ').forEach(function(t,k){
+          var f=t.split(':'),ax=f[2]==null?.5:parseFloat(f[2]);
+          a.push({o:parseFloat(f[0]),x:r.left-sr.left+r.width*ax,y:r.top-sr.top+r.height*parseFloat(f[1]),el:e,first:k===0});
+        });
+      });
+      if(a.length<2)return;
+      a.sort(function(p,q){return p.o-q.o});
+      for(var i=1;i<a.length;i++)if(a[i].y<a[i-1].y+24)a[i].y=a[i-1].y+24;
+      y0=a[0].y;y1=a[a.length-1].y;
+      var s='M'+a[0].x.toFixed(1)+' '+a[0].y.toFixed(1),nA=a.length;
+      for(i=1;i<nA;i++){var p0=a[Math.max(0,i-2)],p1=a[i-1],p2=a[i],p3=a[Math.min(nA-1,i+1)];
+        var c1x=p1.x+(p2.x-p0.x)/6,c1y=cl(p1.y+(p2.y-p0.y)/6,p1.y,p2.y),c2x=p2.x-(p3.x-p1.x)/6,c2y=cl(p2.y-(p3.y-p1.y)/6,p1.y,p2.y);
+        s+=' C'+c1x.toFixed(1)+' '+c1y.toFixed(1)+' '+c2x.toFixed(1)+' '+c2y.toFixed(1)+' '+p2.x.toFixed(1)+' '+p2.y.toFixed(1)}
+      svg.setAttribute('viewBox','0 0 '+SW+' '+SH);
+      [pe,pr,pt,pg,pl].forEach(function(e){e.setAttribute('d',s)});
+      L=pl.getTotalLength();pg.style.strokeDasharray=pl.style.strokeDasharray=L;
+      N=cl(Math.round(L/4),120,1500);ys=new Array(N+1);
+      for(i=0;i<=N;i++)ys[i]=pl.getPointAtLength(L*i/N).y;
+      reach=[];d.querySelectorAll('[data-xp]').forEach(function(e){var f=a.filter(function(v){return v.el===e&&v.first})[0],yy;if(f)yy=f.y;else{var r=e.getBoundingClientRect();yy=r.top-sr.top+r.height*.45}reach.push({el:e,y:yy})});
+      rw=rk.offsetWidth||40;rh=rk.offsetHeight||44;
+      buildStars(sr);
+      if(cy==null)cy=y0;
+      ready=true;
+    }
+    /* collectible stars sit on the route, never behind a card or planet */
+    function buildStars(sr){
+      var old=gotArr.slice();while(coll.firstChild)coll.removeChild(coll.firstChild);cs=[];
+      var obs=[].slice.call(d.querySelectorAll('.st-art,.st-txt,.world-art,.world-body,.hero-grid>div,.build-grid>div,.launch .container,.sec-head,.trust')).map(function(e){
+        var r=e.getBoundingClientRect();return {l:r.left-sr.left-10,r:r.right-sr.left+10,t:r.top-sr.top-10,b:r.bottom-sr.top+10}});
+      var n=cl(Math.round(L/430),8,26),NS='http://www.w3.org/2000/svg';
+      for(var i=0;i<n;i++){
+        var len=L*(.07+.86*(i+.5)/n),q,tries=0,hit;
+        do{q=pl.getPointAtLength(len);hit=obs.some(function(o){return q.x>o.l&&q.x<o.r&&q.y>o.t&&q.y<o.b});if(hit)len+=18;tries++}while(hit&&tries<26&&len<L-30);
+        if(hit)continue;
+        var g=d.createElementNS(NS,'g'),p=d.createElementNS(NS,'path');
+        g.setAttribute('class','cs'+(old[cs.length]?' got':''));g.setAttribute('transform','translate('+q.x.toFixed(1)+' '+q.y.toFixed(1)+')');
+        p.setAttribute('d',starPath(8+(i%3)));g.appendChild(p);coll.appendChild(g);
+        cs.push({y:q.y,x:q.x,g:g});
+      }
+      gotArr=cs.map(function(c,i){return !!old[i]});
+      var sm=$('hud-max');if(sm)sm.textContent=cs.length;
+    }
+
+    /* ---------- canvases: star field + particles ---------- */
+    function sizeCanvas(){
+      var nw=innerWidth,nh=innerHeight;dpr=Math.min(devicePixelRatio||1,2);
+      if(Math.abs(nw-W)<1&&Math.abs(nh-H)<140&&stars.length)return;
+      W=nw;H=nh;
+      [cvS,cvF].forEach(function(c){if(!c)return;c.width=Math.round(W*dpr);c.height=Math.round(H*dpr)});
+      if(ctxS)ctxS.setTransform(dpr,0,0,dpr,0,0);if(ctxF)ctxF.setTransform(dpr,0,0,dpr,0,0);
+      var n=W<700?70:140,cols=['255,255,255','255,255,255','190,220,255','190,170,255','120,225,255'];
+      stars=[];for(var i=0;i<n;i++)stars.push({x:Math.random()*W,y:Math.random()*H,z:rnd(.2,1),r:rnd(.6,1.7),a:rnd(.35,.95),f:rnd(.5,2),p:rnd(0,6.3),c:cols[(Math.random()*cols.length)|0]});
+      if(!anim())staticStars();
+    }
+    function staticStars(){
+      if(!ctxS)return;ctxS.clearRect(0,0,W,H);
+      stars.forEach(function(s){ctxS.fillStyle='rgba('+s.c+','+(s.a*.8).toFixed(2)+')';ctxS.fillRect(s.x,s.y,s.r,s.r)});
+    }
+    function drawStars(t){
+      var c=ctxS;c.clearRect(0,0,W,H);
+      for(var i=0;i<stars.length;i++){
+        var s=stars[i],yy=((s.y-sy*s.z*.28)%H+H)%H,xx=s.x+mx*s.z*14;
+        var a=s.a*(.68+.32*Math.sin(t*.001*s.f+s.p));
+        c.fillStyle='rgba('+s.c+','+a.toFixed(2)+')';
+        c.beginPath();c.arc(xx,yy,s.r*.8,0,6.283);c.fill();
+      }
+    }
+    function emit(x,y,vx,vy,life,r,col){if(P.length>300)return;P.push({x:x,y:y,vx:vx,vy:vy,l:life,m:life,r:r,c:col})}
+    function burst(x,y,n,pal,sp){
+      for(var i=0;i<n;i++){var a=Math.random()*6.283,v=rnd(50,sp||170);emit(x,y,Math.cos(a)*v,Math.sin(a)*v,rnd(.55,1.1),rnd(1.8,4.2),pal[i%pal.length])}
+    }
+    function drawFx(dt){
+      var c=ctxF;c.clearRect(0,0,W,H);c.globalCompositeOperation='lighter';
+      for(var i=P.length-1;i>=0;i--){
+        var p=P[i];p.l-=dt;if(p.l<=0){P.splice(i,1);continue}
+        p.x+=p.vx*dt;p.y+=p.vy*dt;p.vx*=.97;p.vy*=.97;
+        var a=p.l/p.m;c.fillStyle='rgba('+p.c+','+(a*.9).toFixed(2)+')';
+        c.beginPath();c.arc(p.x,p.y,p.r*(.35+a*.65),0,6.283);c.fill();
+      }
+      c.globalCompositeOperation='source-over';
+    }
+
+    /* ---------- HUD: sector, upgrades ---------- */
+    var rail=$('hud-rail'),railB=[];
+    SEC.forEach(function(s,i){
+      if(!rail)return;var b=d.createElement('button');b.type='button';b.setAttribute('aria-label','Go to '+s.name);
+      b.innerHTML='<i></i><span>'+s.n+' · '+s.name+'</span>';
+      b.addEventListener('click',function(){
+        var e=s.el;if(!e)return;
+        if(i===0)scrollTo({top:0,behavior:'smooth'});
+        else{var r=e.getBoundingClientRect();scrollTo({top:Math.max(0,scrollY+r.top-vh*(i>=5?.12:.34)),behavior:'smooth'})}
+      });
+      rail.appendChild(b);railB.push(b);
+    });
+    function setSector(i,silent){
+      if(i===act)return;act=i;var s=SEC[i];
+      aura.style.setProperty('--c1',s.c1);aura.style.setProperty('--c2',s.c2);
+      var g=s.g.split(',');$('og1').setAttribute('stop-color',g[0]);$('og2').setAttribute('stop-color',g[1]);$('og3').setAttribute('stop-color',g[2]);
+      $('hud-name').textContent=s.name;$('hud-num').textContent='Sector '+s.n;
+      railB.forEach(function(b,k){b.classList.toggle('on',k===i);b.classList.toggle('done',k<i)});
+    }
+    function setLvl(n,silent){
+      if(n<=lvl)return;lvl=n;rk.setAttribute('data-lv',n);$('hud-lv').textContent=n;
+      if(!silent){var r=rocketScreen();burst(r.x,r.y,26,PAL[n-1],210)}
+    }
+    var pickT=0;
+    function pickSector(){
+      var k=0;for(var i=0;i<SEC.length;i++){var e=SEC[i].el;if(e&&e.getBoundingClientRect().top<vh*.6)k=i}
+      setSector(k,frames<4);
+    }
+
+    /* ---------- rocket ---------- */
+    var rq={x:0,y:0};
+    function rocketScreen(){return {x:stLeft+rq.x-scrollX,y:stTop+rq.y-scrollY}}
+    function place(){
+      if(!L)return;
+      var len=lenAtY(cy),q=pl.getPointAtLength(len),q1=pl.getPointAtLength(Math.max(0,len-5)),q2=pl.getPointAtLength(Math.min(L,len+5));
+      rq=q;
+      var th=Math.atan2(q2.y-q1.y,q2.x-q1.x)*180/Math.PI;if(dirP<0)th+=180;
+      var land=ss((cy-(y1-Math.min(340,(y1-y0)*.1)))/Math.min(340,(y1-y0)*.1));
+      ang=lerpA(ang,lerpA(th,-90,land),.14);
+      rk.style.transform='translate3d('+(q.x-rw/2).toFixed(1)+'px,'+(q.y-rh/2).toFixed(1)+'px,0) rotate('+(ang+45).toFixed(1)+'deg)';
+      rk.style.setProperty('--b',boost.toFixed(2));
+      if(anim()){pg.style.strokeDashoffset=pl.style.strokeDashoffset=(L-len).toFixed(1)}else{pg.style.strokeDashoffset=pl.style.strokeDashoffset=0}
+      return land;
+    }
+    function ignite(){
+      launched=true;
+      var r=rocketScreen();burst(r.x,r.y,30,PAL[0],230);
+    }
+    function award(silent){
+      var i,it,c;
+      for(i=0;i<cs.length;i++){
+        c=cs[i];if(gotArr[i]||cy<c.y)continue;
+        gotArr[i]=true;nStars++;xp+=10;c.g.setAttribute('class','cs got');
+        if(!silent){var sx=stLeft+c.x-scrollX,sY=stTop+c.y-scrollY;burst(sx,sY,10,['255,230,153','255,255,255','34,196,255'],120)}
+      }
+      for(i=0;i<reach.length;i++){
+        it=reach[i];if(it.el._r||cy<it.y-2)continue;
+        it.el._r=1;var e=it.el,box=e.closest('.st,.world')||e,v=+e.getAttribute('data-xp')||0;
+        box.classList.add('reached');xp+=v;
+        if(!silent){
+          e.classList.add('ping');setTimeout(function(x){x.classList.remove('ping')},1400,e);
+          var x=d.createElement('span');x.className='xp';x.textContent='+'+v+' XP';e.appendChild(x);setTimeout(function(n){n.remove()},1700,x);
+          var r=rocketScreen();burst(r.x,r.y,18,['255,230,153','200,170,255','34,196,255'],150);
+        }
+        var up=+e.getAttribute('data-up');if(up)setLvl(up,silent);
+      }
+    }
+
+    /* ---------- main loop ---------- */
+    function frame(t){
+      raf=requestAnimationFrame(frame);
+      if(!anim()||d.hidden||!ready)return;
+      var dt=Math.min(.05,(t-lt)/1000||.016);lt=t;frames++;
+      sy=scrollY;var dy=sy-psy;psy=sy;
+      var ty=cl(sy+vh*.62-stTop,y0,y1);
+      if(frames<3){cy=ty;cyv=0}
+      var diff=ty-cy;if(diff<-1.5)dirP=-1;else if(diff>1.5)dirP=1;
+      cyv+=(diff*92-cyv*19.2)*dt;cyv=cl(cyv,-3200,3200);cy+=cyv*dt;
+      boost+=(cl(Math.abs(cyv)/1100,0,1)-boost)*(1-Math.exp(-dt*6));
+      var land=place()||0;
+      award(frames<4);
+      /* exhaust */
+      if(launched){
+        var r=rocketScreen(),a=ang*Math.PI/180,hx=Math.cos(a),hy=Math.sin(a),pal=PAL[lvl-1],n=(land>.92&&boost<.1)?0:1+Math.round(boost*5);
+        for(var i=0;i<n;i++){
+          var sp=40+boost*150;
+          emit(r.x-hx*rh*.42+rnd(-3,3),r.y-hy*rh*.42+rnd(-3,3),-hx*sp+rnd(-26,26),-hy*sp+rnd(-26,26),rnd(.35,.8),rnd(1.6,3.4)+lvl*.35,pal[Math.random()<.45?0:1]);
+        }
+        if(land>.97&&!landed){landed=true;burst(r.x,r.y+rh*.3,70,['255,230,153','255,122,200','34,196,255','140,255,200','190,140,255'],300)}
+        else if(land<.6)landed=false;
+      }
+      /* parallax + hero tilt (cheap, only near the top / only when scroll moved) */
+      mx+=(tmx-mx)*.06;my+=(tmy-my)*.06;
+      if(sy<vh*1.3)layers.forEach(function(e){var z=+e.getAttribute('data-depth')||1;e.style.transform='translate3d('+(mx*z*-12).toFixed(1)+'px,'+(my*z*-9).toFixed(1)+'px,0)'});
+      if(dy){
+        if(innerWidth>=900)vis.forEach(function(e){var b=e.parentNode.getBoundingClientRect(),off=b.top+b.height/2-vh/2;e.style.transform='translate3d(0,'+(off*parseFloat(e.getAttribute('data-px'))).toFixed(1)+'px,0)'});
+        pickSector();
+        if(ft)hud.classList.toggle('off',ft.getBoundingClientRect().top<vh*.82);
+      }
+      /* numbers */
+      dispXP+=(xp-dispXP)*.18;if(Math.abs(xp-dispXP)<.5)dispXP=xp;
+      $('hud-xp').textContent=Math.round(dispXP);$('hud-stars').textContent=nStars;
+      $('score-xp').textContent=Math.round(dispXP);$('score-stars').textContent=nStars;
+      $('hud-bar').style.width=(cl((cy-y0)/Math.max(1,y1-y0),0,1)*100).toFixed(1)+'%';
+      drawStars(t);drawFx(dt);
+    }
+
+    /* ---------- lite mode (reduced motion / slow device): everything static & visible ---------- */
+    function goLite(save){
+      h.classList.remove('anim');h.classList.add('lite');cancelAnimationFrame(raf);
+      px.forEach(function(e){e.style.transform=''});layers.forEach(function(e){e.style.transform=''});
+      d.querySelectorAll('.pop').forEach(function(e){e.classList.add('in')});
+      d.querySelectorAll('.rv').forEach(function(e){e.classList.add('in')});
+      if(ctxF)ctxF.clearRect(0,0,W,H);staticStars();
+      if(ready){cy=y0;place()}
+      if(save)try{sessionStorage.setItem('co-lite','1')}catch(x){}
+    }
+
+    /* ---------- reveal on scroll ---------- */
+    function pop(el){if(!el)return;el.classList.add('in');if(el.id==='p3')ignite()}
+    if(!ioOK){d.querySelectorAll('.pop,.rv').forEach(function(e){e.classList.add('in')});launched=true}
+    else if(anim()){
+      var io=new IntersectionObserver(function(es){es.forEach(function(e){
+        if(!e.isIntersecting)return;
+        var el=e.target;io.unobserve(el);
+        if(el.classList.contains('rv'))el.classList.add('in');else pop(el);
+      })},{threshold:.3});
+      d.querySelectorAll('.pop:not([id]),.rv').forEach(function(e){io.observe(e)});
+      setTimeout(function(){pop($('p3'))},450);
+      var po=new IntersectionObserver(function(es){es.forEach(function(e){
+        var i=vis.indexOf(e.target);
+        if(e.isIntersecting&&i<0)vis.push(e.target);else if(!e.isIntersecting&&i>-1)vis.splice(i,1);
+      })},{rootMargin:'100px'});
+      px.forEach(function(e){po.observe(e)});
+    }
+
+    /* ---------- pointer: hero depth + card tilt ---------- */
+    if(matchMedia('(pointer:fine)').matches){
+      addEventListener('pointermove',function(e){tmx=e.clientX/innerWidth*2-1;tmy=e.clientY/innerHeight*2-1},{passive:true});
+      d.querySelectorAll('.st-txt').forEach(function(c){
+        c.addEventListener('pointermove',function(e){
+          if(!anim())return;var r=c.getBoundingClientRect();
+          c.style.setProperty('--ry',(((e.clientX-r.left)/r.width-.5)*7).toFixed(2)+'deg');
+          c.style.setProperty('--rx',((.5-(e.clientY-r.top)/r.height)*7).toFixed(2)+'deg');
+        });
+        c.addEventListener('pointerleave',function(){c.style.setProperty('--rx','0deg');c.style.setProperty('--ry','0deg')});
+      });
+    }
+
+    /* ---------- the launch countdown on the final button ---------- */
+    var go=$('btn-launch');
+    if(go)go.addEventListener('click',function(e){
+      if(!anim()||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey||e.button)return;
+      e.preventDefault();var url=go.href,n=3,done=false,o=d.createElement('div');
+      o.className='cdn';o.setAttribute('role','dialog');o.setAttribute('aria-label','Launch countdown');
+      o.innerHTML='<div class="cdn-n" id="cdn-n">3</div><p class="cdn-t">Launch sequence started</p><button type="button" class="cdn-skip">Skip</button><img class="cdn-rk" src="assets/images/orbit/rocket.webp" width="381" height="420" alt="">';
+      d.body.appendChild(o);requestAnimationFrame(function(){o.classList.add('on')});
+      function fin(){if(done)return;done=true;location.href=url}
+      o.querySelector('.cdn-skip').addEventListener('click',fin);
+      var iv=setInterval(function(){
+        n--;var el=$('cdn-n');
+        if(n>0){el.textContent=n;el.style.animation='none';void el.offsetWidth;el.style.animation=''}
+        else{clearInterval(iv);el.textContent='LIFTOFF!';el.style.fontSize='clamp(2.6rem,12vw,6rem)';o.classList.add('lift');setTimeout(fin,1250)}
+      },850);
+    });
+
+    /* ---------- boot ---------- */
+    var rz;function re(){clearTimeout(rz);rz=setTimeout(function(){vh=innerHeight;sizeCanvas();build()},140)}
+    addEventListener('resize',re);
+    if('ResizeObserver' in window)new ResizeObserver(re).observe(story);
+    addEventListener('load',function(){build();if(!anim())goLite(false)});
+    sizeCanvas();build();
+    if(anim()){
+      setSector(0,true);
+      raf=requestAnimationFrame(frame);
+      setTimeout(function(){hud.classList.add('on')},900);
+      addEventListener('load',function(){setTimeout(function(){
+        var t0=performance.now(),f=0,last=t0,slow=0;
+        (function m(t){
+          f++;if(t-last>100)slow++;last=t;
+          if(t-t0<1800)requestAnimationFrame(m);
+          else if((t-t0)/f>40||slow>6)goLite(true);
+        })(t0);
+      },900)});
+    }else{goLite(false)}
+  })();
+  </script>
+
+</body>
+</html>
